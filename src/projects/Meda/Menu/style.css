@@ -1,0 +1,11 @@
+.meda-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 8.33%;
+  height: 100%;
+
+  padding: 45px 0 60px 0;
+  border-right: 1px solid #e5eeeb;
+}

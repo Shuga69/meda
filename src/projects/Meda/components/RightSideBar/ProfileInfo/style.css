@@ -1,0 +1,10 @@
+.meda-profile-container {
+  display: flex;
+  justify-content: space-between;
+}
+.meda-profile-container-main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 47%;
+}

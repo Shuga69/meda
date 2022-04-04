@@ -1,0 +1,17 @@
+.meda-overview-card {
+  background-color: #fafbfc;
+  border-radius: 10px;
+  width: 32.33%;
+  padding: 20px;
+}
+.meda-overview-card-total {
+  display: flex;
+}
+.meda-overview-card-total-text {
+  margin-left: 23px;
+}
+.meda-overview-card-count {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}

@@ -1,0 +1,9 @@
+.tab-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+}
+.tabs {
+  width: 100%;
+}

@@ -1,0 +1,36 @@
+.meda-home-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: 160px;
+  margin-right: 27%;
+  padding-bottom: 100px;
+}
+.meda-home-container {
+  width: 100%;
+}
+.meda-home__inner {
+  display: flex;
+
+  width: 100%;
+}
+
+.meda-covid-info {
+  display: flex;
+  justify-content: space-around;
+  width: 52%;
+  margin-top: 30px;
+  position: relative;
+}
+.meda-covid-image {
+  position: absolute;
+  right: 20px;
+}
+.meda-covid-info-text {
+  background-color: #41ab8e;
+  margin-top: 30px;
+  border-radius: 10px;
+  height: 150px;
+  width: 100%;
+  padding: 20px 15px 0px 20px;
+}

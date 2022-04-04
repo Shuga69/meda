@@ -1,14 +1,4 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #e5e5e5;
 }
 * {
-}
-.frame-wrapper {
-  width: 1410px;
-
-  height: 720px;
 }

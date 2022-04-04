@@ -3,9 +3,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 8.33%;
-  height: 100%;
-
-  padding: 45px 0 60px 0;
+  /* width: 8.33%; */
+  position: fixed;
+  width: 160px;
+  height: 100vh;
+  padding: 29.95px 0 39.96px 0;
   border-right: 1px solid #e5eeeb;
+}
+.meda-menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 550px;
 }

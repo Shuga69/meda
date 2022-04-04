@@ -1,0 +1,8 @@
+.meda-overview-section {
+  margin-top: 45px;
+}
+.meda-overview-card-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}

@@ -1,0 +1,24 @@
+.meda-home-side-bar-profile-image {
+  position: absolute;
+  bottom: 0;
+}
+.meda-activities-list {
+  width: 90%;
+  overflow-y: auto;
+  height: 230px;
+  margin-bottom: 40px;
+}
+.meda-activities-side-bar-profile-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.meda-activities-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.meda-activities-list {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

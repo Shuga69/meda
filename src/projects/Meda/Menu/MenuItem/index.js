@@ -1,12 +1,19 @@
 import React from "react";
 import Text from "../../components/Text";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import "./style.css";
-const MenuItem = ({ image, text }) => {
+const MenuItem = ({ image, text, to = "/" }) => {
+  let resolved = useResolvedPath(to);
+  let match = useMatch({ path: resolved.pathname, end: true });
+
   return (
-    <div className='meda-menu-item'>
-      <img src={image} />
-      <Text style={{ "font-weight": "500" }} text={text} />
-    </div>
+    <Link
+      to={to}
+      className={match ? `meda-menu-item active` : "meda-menu-item"}>
+      {/* <img width='21.33px' height='21.33px' src={<DepartmentIcon />} /> */}
+      <div>{image(match)}</div>
+      <Text style={{ "font-weight": "500", "margin-top": "8px" }} text={text} />
+    </Link>
   );
 };
 

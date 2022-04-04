@@ -1,0 +1,13 @@
+.meda-home-side-bar-profile-container {
+  height: 420px;
+  overflow-y: auto;
+}
+.meda-home-side-bar-profile-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.meda-home-side-bar-profile-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

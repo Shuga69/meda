@@ -1,0 +1,26 @@
+.meda-custom-button {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.meda-custom-button.white {
+  width: 120px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: none;
+  color: #028f68;
+  font-size: 12px;
+  font-weight: 500;
+}
+.meda-custom-button.black {
+  width: 150px;
+  height: 50px;
+  background: #333333;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}

@@ -3,4 +3,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* width: 90px;
+  height: 80px; */
+
+  width: 120px;
+  height: 120px;
+  color: #333333;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+}
+.meda-menu-item.active {
+  background: #fafbfc;
+  color: #333333;
 }

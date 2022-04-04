@@ -1,0 +1,13 @@
+.meda-activities-item {
+  display: flex;
+  height: 60px;
+  width: 100%;
+}
+.meda-activities-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.meda-input-by-text {
+  display: flex;
+}

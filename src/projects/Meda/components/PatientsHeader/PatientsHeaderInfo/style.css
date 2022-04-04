@@ -1,0 +1,18 @@
+.meda-user-info-header-container {
+  display: flex;
+  align-items: center;
+}
+.meda-user-info-header-text {
+  margin-left: 30px;
+}
+.meda-user-header-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+.meda-user-header-description-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+}

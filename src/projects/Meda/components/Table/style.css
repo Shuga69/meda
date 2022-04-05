@@ -12,6 +12,7 @@ th {
   font-size: 11px !important;
   text-transform: uppercase;
   line-height: 170%;
+  padding-bottom: 8px;
 }
 td {
   padding: 7px 20px;

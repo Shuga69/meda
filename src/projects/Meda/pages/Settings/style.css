@@ -1,0 +1,39 @@
+.meda-settings-right-side-container {
+  width: 27%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+}
+.meda-settings-avatar-info {
+  display: flex;
+  padding: 20px 20px 0px 20px;
+}
+.meda-settings-avatar-info img {
+  margin-right: 30px;
+}
+.meda-settings-password-info {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+}
+.meda-settings-contact-container {
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.meda-settings-contact-title {
+  display: flex;
+  justify-content: space-between;
+  width: 67%;
+}
+.meda-settings-contact-item {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 30px;
+}
+.meda-settings-save-btn-container {
+  width: 27%;
+  display: flex;
+  justify-content: space-between;
+}

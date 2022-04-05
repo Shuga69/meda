@@ -1,0 +1,19 @@
+.meda-summary-info-appointment-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.meda-hr-line {
+  width: 100%;
+  height: 1px;
+  background-color: #e5eeeb;
+}
+.meda-appointment-description {
+  padding: 15px 20px;
+}
+.meda-appointment-btn-container {
+  margin-top: 20%;
+  width: 57%;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,10 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 .meda-body {
   display: flex;
   background: white;
 
   color: #333333;
-  font-family: "Roboto", sans-serif;
 }
 .meda-body * {
   font-size: 14px;

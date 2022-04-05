@@ -4,8 +4,8 @@ import downArrow from "../../assets/downArrow.svg";
 import upArrow from "../../assets/upArrow.svg";
 import "./style.css";
 import useCollapse from "react-collapsed";
-const InfoContainer = ({ text, children }) => {
-  const [isExpanded, setExpanded] = useState(false);
+const InfoContainer = ({ text, children, dropDown = true }) => {
+  const [isExpanded, setExpanded] = useState(true);
   const { getToggleProps, getCollapseProps } = useCollapse({
     isExpanded,
   });
@@ -14,7 +14,7 @@ const InfoContainer = ({ text, children }) => {
     <article className='meda-article-container'>
       <div
         {...getToggleProps({
-          onClick: () => setExpanded((x) => !x),
+          onClick: () => (dropDown ? setExpanded((x) => !x) : null),
         })}
         className='meda-article-btn'>
         <Text
@@ -24,7 +24,7 @@ const InfoContainer = ({ text, children }) => {
           }}
           text={text}
         />
-        <img src={isExpanded ? upArrow : downArrow} />
+        {dropDown ? <img src={isExpanded ? upArrow : downArrow} /> : <></>}
       </div>
       <div {...getCollapseProps()} className='meda-article-content'>
         {children}

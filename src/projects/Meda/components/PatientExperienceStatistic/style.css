@@ -1,0 +1,16 @@
+.meda-patient-exp-container {
+  width: 23%;
+  padding: 20px 0px 0px 20px;
+  background: #fafbfc;
+  border-radius: 10px;
+}
+.meda-patient-exp-statistic-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.meda-patient-exp-statistic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

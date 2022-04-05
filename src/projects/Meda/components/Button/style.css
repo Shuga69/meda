@@ -24,3 +24,34 @@
   font-size: 14px;
   font-weight: 500;
 }
+.meda-custom-button.green {
+  width: 150px;
+  height: 50px;
+  background: #e8f5f1;
+  border-radius: 10px;
+  border: none;
+  color: #028f68;
+  font-size: 14px;
+  font-weight: 500;
+}
+.meda-custom-button.blue {
+  width: 150px;
+  height: 50px;
+  background: #ecf4ff;
+  border-radius: 10px;
+  border: none;
+  color: #5b8ecd;
+  font-size: 14px;
+  font-weight: 500;
+}
+.meda-custom-button.darkGreen {
+  width: 150px;
+  height: 50px;
+
+  background: #028f68;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}

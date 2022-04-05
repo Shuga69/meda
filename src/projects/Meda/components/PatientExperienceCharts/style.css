@@ -1,0 +1,10 @@
+.meda-patient-exp-donut-container {
+  width: 25%;
+  padding: 20px 0px 0px 20px;
+  background: #fafbfc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+}

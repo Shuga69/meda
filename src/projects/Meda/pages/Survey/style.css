@@ -1,0 +1,19 @@
+.meda-survey-btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 25px;
+}
+.meda-summary-info-survey-container {
+  margin-top: 35px;
+}
+.meda-survey-meta-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  font-size: 11px;
+  color: #555555;
+}
+.meda-survey-table-container {
+  margin-top: 20px;
+}

@@ -27,12 +27,12 @@ const Menu = () => {
           image={(active) => <PatientsIcon active={active} />}
         />
         <MenuItem
-          to='/s'
+          to='/dashboard'
           text='Dashboard'
           image={(active) => <DashboardIcon active={active} />}
         />
         <MenuItem
-          to='/d'
+          to='/settings'
           text='Settings'
           image={(active) => <SettingsIcon active={active} />}
         />

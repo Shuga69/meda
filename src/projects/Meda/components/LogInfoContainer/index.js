@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Text from "../Text";
 import "./style.css";
-const LogInfoContainer = ({ children, text }) => {
+const LogInfoContainer = ({ children, text, to = "/newAppointment" }) => {
   return (
     <article className='meda-article-container'>
       <div className='meda-article-add-btn'>
@@ -14,7 +14,7 @@ const LogInfoContainer = ({ children, text }) => {
           text={text}
         />
 
-        <Link to='/b'>
+        <Link to={to}>
           <Text
             style={{
               "font-weight": "500",

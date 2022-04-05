@@ -1,0 +1,33 @@
+.meda-dashboard-right-side-container {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 9%;
+}
+.meda-dashboard-right-side-line-text {
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+}
+.meda-dashboard-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 55px;
+}
+.meda-dashboard-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: 160px;
+  margin-right: 20%;
+  padding-bottom: 100px;
+}
+.meda-statistic-card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}

@@ -2,40 +2,24 @@ import React from "react";
 import Input from "../Input";
 import search from "../../assets/search.svg";
 import Text from "../Text";
-import user from "../../assets/userIcon.png";
+
 import Button from "../Button";
 import Tabs from "../Tabs";
 import "./style.css";
 import PatientsHeaderInfo from "./PatientsHeaderInfo";
 
-const PatientsHeader = ({ data }) => {
-  const infoData = [
-    {
-      title: "Preffered contact",
-      text: "Secure Massage",
-    },
-    {
-      title: "Language",
-      text: "English",
-    },
-    {
-      title: "Risk level",
-      text: "Low",
-      color: "#028F68",
-    },
-  ];
-  const btnMenuStyle = {
-    width: "100%",
-    background: "#FAFBFC",
-    border: "1px solid #E5EEEB",
-    "text-transform": "uppercase",
-    color: "#000000",
-    height: "50px",
-  };
+const PatientsHeader = ({
+  data,
+  infoData = [],
+  image,
+  title,
+  subtitle,
+  style,
+}) => {
   return (
     <div>
       <div className='meda-patients-header-container'>
-        <div className='meda-patients-header-menu'>
+        <div className='meda-patients-header-menu' style={style}>
           {data &&
             data.map((item) => (
               <Text
@@ -48,37 +32,11 @@ const PatientsHeader = ({ data }) => {
       </div>
 
       <PatientsHeaderInfo
-        title='Patient'
-        subtitle='Sean Barrow'
+        title={title}
+        subtitle={subtitle}
         data={infoData}
-        image={user}
+        image={image}
       />
-      <div className='meda-header-btn-container'>
-        <Tabs type='side-bar'>
-          <Button
-            style={{
-              ...{
-                borderTopLeftRadius: 8,
-                borderBottomLeftRadius: 8,
-              },
-              ...btnMenuStyle,
-            }}
-            label='Summary'
-          />
-          <Button style={btnMenuStyle} label='Care plan &amp; Team' />
-          <Button style={btnMenuStyle} label='Lab results' />
-          <Button
-            style={{
-              ...{
-                borderTopRightRadius: 8,
-                borderBottomRightRadius: 8,
-              },
-              ...btnMenuStyle,
-            }}
-            label='PGHD'
-          />
-        </Tabs>
-      </div>
     </div>
   );
 };

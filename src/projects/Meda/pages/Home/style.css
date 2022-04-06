@@ -41,7 +41,16 @@
     margin-right: 246px;
   }
   .meda-covid-info {
-    display: none;
+    width: 100%;
+  }
+  .meda-covid-info-text {
+    height: 300px;
+  }
+  .meda-covid-info img {
+    width: 84%;
+  }
+  .meda-covid-image {
+    top: 150px;
   }
 }
 @media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {

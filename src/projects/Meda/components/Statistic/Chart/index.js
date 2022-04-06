@@ -8,9 +8,9 @@ const Chart = () => {
   const chartBtnStyle = {
     background: "white",
     border: "1px solid #E5EEEB",
-    "border-radius": "6px",
-    "text-transform": "uppercase",
-    "font-size": "11px",
+    borderRadius: "6px",
+    textTransform: "uppercase",
+    fontSize: "11px",
     width: "80px",
     height: "30px",
   };

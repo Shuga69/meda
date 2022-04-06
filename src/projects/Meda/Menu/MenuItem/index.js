@@ -12,7 +12,7 @@ const MenuItem = ({ image, text, to = "/" }) => {
       className={match ? `meda-menu-item active` : "meda-menu-item"}>
       {/* <img width='21.33px' height='21.33px' src={<DepartmentIcon />} /> */}
       <div>{image(match)}</div>
-      <Text style={{ "font-weight": "500", "margin-top": "8px" }} text={text} />
+      <Text style={{ fontWeight: "500", marginTop: "8px" }} text={text} />
     </Link>
   );
 };

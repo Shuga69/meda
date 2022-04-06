@@ -18,9 +18,9 @@ const Home = () => {
           <div className='meda-container'>
             <Text
               style={{
-                "font-size": "30px",
-                "font-weight": "500",
-                "margin-top": "36.66px",
+                fontSize: "30px",
+                fontWeight: "500",
+                marginTop: "36.66px",
                 color: "#000000",
               }}
               text='Radiology Department'
@@ -32,14 +32,14 @@ const Home = () => {
                 <Text
                   style={{
                     color: "white",
-                    "font-size": "18px",
+                    fontSize: "18px",
                     width: "200px",
                   }}
                   text='Current information relating to the COVID-19'
                 />
                 <Button
                   type='white'
-                  style={{ "margin-top": "20px" }}
+                  style={{ marginTop: "20px" }}
                   text='Read more'
                 />
               </div>

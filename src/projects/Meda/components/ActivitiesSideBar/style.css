@@ -22,3 +22,16 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+@media all and (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
+  .meda-home-side-bar-profile-image {
+    width: 90%;
+  }
+}
+@media all and (max-width: 1368px) and (max-height: 912px) and (orientation: landscape) {
+}
+@media all and (max-width: 1180px) and (max-height: 820px) and (orientation: landscape) {
+  .meda-home-side-bar-profile-image {
+    width: 80%;
+  }
+}

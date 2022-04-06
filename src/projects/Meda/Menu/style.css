@@ -32,5 +32,22 @@
     border-right: 1px solid #e5eeeb;
   }
 }
-@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
+@media all and (max-width: 1368px) and (max-height: 912px) and (orientation: landscape) {
+  .meda-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 8.33%; */
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+    padding: 29.95px 0 39.96px 0;
+    border-right: 1px solid #e5eeeb;
+  }
+}
+@media all and (max-width: 1180px) and (max-height: 820px) and (orientation: landscape) {
+  .meda-menu-container {
+    height: 450px;
+  }
 }

@@ -1,8 +1,43 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ApexChart from "react-apexcharts";
 
 const BarChart = ({ data }) => {
+  const [lanscapeMatches, setLandscapeMatches] = useState(
+    window.matchMedia("(max-width: 1368px) and (max-height: 912px) ").matches
+  );
+  const [portraitMatches, setPortraitMatches] = useState(
+    window.matchMedia("(max-width: 912px) and (max-height: 1368px) ").matches
+  );
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 1368px) and (max-height: 912px)")
+      .addEventListener("change", (e) => setLandscapeMatches(e.matches));
+    window
+      .matchMedia("(max-width: 912px) and (max-height: 1368px)")
+      .addEventListener("change", (e) => setPortraitMatches(e.matches));
+  }, []);
   const series = data;
+  const widthChart = lanscapeMatches ? 350 : portraitMatches ? 250 : 450;
+
+  const legendPosition = lanscapeMatches
+    ? {
+        position: "top",
+        offsetY: 25,
+        offsetX: -50,
+      }
+    : portraitMatches
+    ? {
+        position: "top",
+        offsetY: 25,
+        offsetX: -70,
+      }
+    : {
+        position: "left",
+        offsetY: 25,
+        offsetX: -30,
+      };
+
+  console.log(legendPosition);
   const options = {
     chart: { toolbar: { show: false }, offsetX: 0 },
     plotOptions: {
@@ -19,9 +54,7 @@ const BarChart = ({ data }) => {
 
     legend: {
       customLegendItems: ["Yes, definitely", "Yes, somewhat", "No"],
-      position: "left",
-      offsetY: 25,
-      offsetX: -30,
+      ...legendPosition,
       markers: {
         width: 12,
         height: 12,
@@ -58,7 +91,7 @@ const BarChart = ({ data }) => {
         type='bar'
         options={options}
         series={series}
-        width={450}
+        width={widthChart}
         height={170}
       />
     </div>

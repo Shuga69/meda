@@ -50,47 +50,46 @@ const Appointment = () => {
               infoData={infoData}
             />
             <div className='meda-summary-info-appointment-container'>
-              <div className='meda-summary-info'>
-                <InfoContainer dropDown={false} text='Summary'>
-                  <InfoContainerText title='Patient' text='Sean Barrow' />
-                  <InfoContainerText title='Patient ID' text='8312' />
-                  <InfoContainerText title='PCP' text='' />
-                  <InfoContainerText
-                    title='Attending doctor'
-                    text='Dermatologist'
-                  />
-                  <InfoContainerText
-                    title='Appointment location'
-                    text='312 Grammont St # 101, Monroe, LA 71201'
-                  />
-                </InfoContainer>
-                <div className='meda-hr-line'></div>
-                <div className='meda-appointment-description'>
-                  <Text
-                    style={{ "margin-bottom": "10px" }}
-                    text='Description'
-                  />
-                  <Input
-                    background='#FAFBFC'
-                    height='120px'
-                    disabled={true}
-                    style={{ width: "100%" }}
-                  />
+              <div className='meda-summary-info-appointment-text'>
+                <div className='meda-summary-info-appointment'>
+                  <InfoContainer dropDown={false} text='Summary'>
+                    <InfoContainerText title='Patient' text='Sean Barrow' />
+                    <InfoContainerText title='Patient ID' text='8312' />
+                    <InfoContainerText title='PCP' text='' />
+                    <InfoContainerText
+                      title='Attending doctor'
+                      text='Dermatologist'
+                    />
+                    <InfoContainerText
+                      title='Appointment location'
+                      text='312 Grammont St # 101, Monroe, LA 71201'
+                    />
+                  </InfoContainer>
                 </div>
-                <div className='meda-appointment-btn-container'>
-                  <Button type='black' text='Save and close' />
-                  <Button type='green' text='Save' />
+                <div className='meda-summary-info-appointment'>
+                  <InfoContainer dropDown={false} text='Date & Time'>
+                    <Table
+                      tbodyData={appointmentsData}
+                      theadData={appointmentsColumns}
+                    />
+                  </InfoContainer>
+                  <div className='meda-hr-line-duration'></div>
+                  <InfoContainerText title='Duration' text='30 min' />
                 </div>
               </div>
-              <div className='meda-summary-info'>
-                <InfoContainer dropDown={false} text='Date & Time'>
-                  <Table
-                    tbodyData={appointmentsData}
-                    theadData={appointmentsColumns}
-                  />
-                </InfoContainer>
-                <div className='meda-hr-line'></div>
-                <InfoContainerText title='Duration' text='30 min' />
+              <div className='meda-hr-line'></div>
+              <div className='meda-appointment-description'>
+                <Text style={{ "margin-bottom": "10px" }} text='Description' />
+                <Input
+                  background='#FAFBFC'
+                  height='120px'
+                  disabled={true}
+                  style={{ width: "100%" }}
+                />
+              </div>
+              <div className='meda-appointment-btn-container'>
+                <Button type='black' text='Save and close' />
+                <Button type='green' text='Save' />
               </div>
             </div>
           </div>

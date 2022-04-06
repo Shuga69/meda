@@ -13,3 +13,23 @@
   justify-content: space-between;
   margin-top: 90px;
 }
+@media all and (max-width: 1180px) and (max-height: 820px) and (orientation: landscape) {
+  .side-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+}
+
+@media all and (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
+  .side-title-container {
+    margin-top: 305px;
+  }
+}
+
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .side-title-container {
+    margin-top: 155px;
+  }
+}

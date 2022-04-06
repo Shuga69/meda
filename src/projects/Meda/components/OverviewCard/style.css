@@ -25,5 +25,19 @@
     margin-top: 20px;
   }
 }
-@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
+@media all and (max-width: 1368px) and (max-height: 912px) and (orientation: landscape) {
+}
+@media all and (max-width: 1180px) and (max-height: 820px) and (orientation: landscape) {
+  .meda-overview-card {
+    min-width: 200px;
+  }
+}
+@media all and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+  .meda-overview-card {
+    background-color: #fafbfc;
+    border-radius: 10px;
+    width: 47%;
+    min-width: 260px;
+    padding: 20px;
+  }
 }

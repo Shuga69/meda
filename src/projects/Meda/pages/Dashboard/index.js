@@ -149,8 +149,89 @@ const Dashboard = () => {
                 />
               </PatientExperienceCharts>
             </div>
+
+            <div className='meda-statistic-card-container-mobile'>
+              <PatientExperienceCharts
+                title='Did you see the doctor within 15 min of your appointment time?'
+                subtitle='This Quarter'
+                style={{ width: "45%" }}>
+                <DonutChart percent={[15, 85]} />
+              </PatientExperienceCharts>
+              <PatientExperienceCharts
+                title='Did you the doctor explain things ia a way that was easy to understand? '
+                subtitle='This Quarter'
+                style={{ width: "50%" }}>
+                <BarChart
+                  data={[
+                    {
+                      data: [30, 45, 20],
+                    },
+                    {
+                      data: [20, 25, 35],
+                    },
+                    {
+                      data: [35, 30, 25],
+                    },
+                  ]}
+                />
+              </PatientExperienceCharts>
+            </div>
+            <div className='meda-statistic-card-container-mobile'>
+              <PatientExperienceCharts
+                title='Did you see the doctor within 15 min of your appointment time?'
+                subtitle='This Quarter'
+                style={{ width: "45%" }}>
+                <DonutChart percent={[44, 56]} />
+              </PatientExperienceCharts>
+              <PatientExperienceCharts
+                title='Did you the doctor explain things ia a way that was easy to understand? '
+                subtitle='This Quarter'
+                style={{ width: "50%" }}>
+                <BarChart
+                  data={[
+                    {
+                      data: [30, 45, 20],
+                    },
+                    {
+                      data: [20, 25, 35],
+                    },
+                    {
+                      data: [35, 30, 25],
+                    },
+                  ]}
+                />
+              </PatientExperienceCharts>
+            </div>
+            <div className='meda-statistic-card-container-mobile'>
+              <PatientExperienceCharts
+                title='Did you see the doctor within 15 min of your appointment time?'
+                subtitle='This Quarter'
+                style={{ width: "45%" }}>
+                <DonutChart percent={[44, 56]} />
+              </PatientExperienceCharts>
+
+              <PatientExperienceCharts
+                title='Did the doctor listen to you carefully?'
+                subtitle='This Quarter'
+                style={{ width: "50%" }}>
+                <BarChart
+                  data={[
+                    {
+                      data: [30, 15, 20],
+                    },
+                    {
+                      data: [27, 25, 35],
+                    },
+                    {
+                      data: [35, 30, 25],
+                    },
+                  ]}
+                />
+              </PatientExperienceCharts>
+            </div>
+
             <div className='meda-survey-btn-container'>
-              <div className='meda-settings-save-btn-container'>
+              <div className='meda-settings-save-btn-container dashboard'>
                 <Button type='black' text='Save as' />
                 <Button type='green' text='Edit' />
               </div>

@@ -63,5 +63,26 @@
     padding: 20px 30px 0px 30px;
   }
 }
-@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
+@media all and (max-width: 1368px) and (max-height: 912px) and (orientation: landscape) {
+  .meda-chart-btn-container {
+    width: 35%;
+  }
+}
+@media all and (max-width: 1180px) and (max-height: 820px) and (orientation: landscape) {
+  .meda-chart-btn-container {
+    width: 40%;
+  }
+  .meda-chart-container-g {
+    width: 70%;
+    height: 210px;
+  }
+}
+@media all and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+  .meda-chart-btn-container {
+    width: 50%;
+  }
+  .meda-chart-container-g {
+    width: 65%;
+    height: 200px;
+  }
 }

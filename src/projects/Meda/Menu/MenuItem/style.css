@@ -17,7 +17,7 @@
   color: #333333;
 }
 
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+@media all and (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
   .meda-menu-item {
     display: flex;
     justify-content: center;

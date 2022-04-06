@@ -35,10 +35,10 @@
   padding: 20px 15px 0px 20px;
 }
 
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+@media all and (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
   .meda-home-section {
     margin-left: 100px;
-    margin-right: 246px;
+    margin-right: 32%;
   }
   .meda-covid-info {
     width: 100%;

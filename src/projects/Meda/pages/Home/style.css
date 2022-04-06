@@ -3,7 +3,7 @@
   justify-content: center;
   width: 100%;
   margin-left: 160px;
-  margin-right: 27%;
+  margin-right: 515px;
   padding-bottom: 100px;
 }
 .meda-home-container {
@@ -33,4 +33,16 @@
   height: 150px;
   width: 100%;
   padding: 20px 15px 0px 20px;
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .meda-home-section {
+    margin-left: 100px;
+    margin-right: 246px;
+  }
+  .meda-covid-info {
+    display: none;
+  }
+}
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
 }

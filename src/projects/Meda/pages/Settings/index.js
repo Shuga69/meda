@@ -34,7 +34,9 @@ const Settings = () => {
                     <Button type='green' text='Upload image' />
                   </div>
                 </InfoContainer>
-                <InfoContainer text='Personal Info'>&nbsp;</InfoContainer>
+                <InfoContainer expanded={false} text='Personal Info'>
+                  &nbsp;
+                </InfoContainer>
                 <InfoContainer text='Change password'>
                   <div className='meda-settings-password-info'>
                     <Text

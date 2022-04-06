@@ -4,5 +4,18 @@
 .meda-overview-card-section {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 20px;
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .meda-overview-card-section {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+}
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
 }

@@ -84,8 +84,6 @@ const Chart = () => {
       toolbar: {
         show: false,
       },
-      offsetX: -20,
-      offsetY: 15,
     },
     fill: {
       type: "gradient",
@@ -222,13 +220,15 @@ const Chart = () => {
             </div>
           </div>
         </div>
-        <ApexChart
-          type='area'
-          height='250px'
-          width='300%'
-          series={series}
-          options={options}
-        />
+        <div className='meda-chart-container-g'>
+          <ApexChart
+            type='area'
+            height='100%'
+            width='100%'
+            series={series}
+            options={options}
+          />
+        </div>
       </div>
     </div>
   );

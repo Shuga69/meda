@@ -35,3 +35,29 @@
 
   width: 24%;
 }
+.meda-chart-container-g {
+  width: 100%;
+  height: 250px;
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .meda-chart-view-container {
+    flex-direction: column-reverse;
+  }
+  .meda-chart-container-g {
+    width: 100%;
+    height: 100%;
+  }
+  .meda-chart-title {
+    flex-direction: column;
+  }
+  .meda-chart-btn-container {
+    width: 100%;
+  }
+  .meda-chart-view-info-container {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
+}

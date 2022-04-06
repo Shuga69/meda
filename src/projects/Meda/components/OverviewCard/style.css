@@ -2,6 +2,7 @@
   background-color: #fafbfc;
   border-radius: 10px;
   width: 32.33%;
+  min-width: 260px;
   padding: 20px;
 }
 .meda-overview-card-total {
@@ -14,4 +15,15 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .meda-overview-card {
+    width: 100%;
+  }
+  .meda-overview-card {
+    margin-top: 20px;
+  }
+}
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
 }

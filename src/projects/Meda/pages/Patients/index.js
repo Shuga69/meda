@@ -17,6 +17,7 @@ const Patients = () => {
     border: "1px solid #E5EEEB",
     "text-transform": "uppercase",
     color: "#000000",
+    "font-weight": 500,
     height: "50px",
   };
   const menu = [
@@ -138,7 +139,9 @@ const Patients = () => {
                     text='s.barrow@outlook.com'
                   />
                 </InfoContainer>
-                <InfoContainer text='Personal'>&nbsp;</InfoContainer>
+                <InfoContainer expanded={false} text='Personal'>
+                  &nbsp;
+                </InfoContainer>
                 <InfoContainer text='insurance Info'>
                   <InfoContainerText title='Member ID' text='1234567890' />
                   <InfoContainerText

@@ -10,7 +10,7 @@
 }
 
 .tab-list-active {
-  background: #e8f5f1;
+  background: #e8f5f1 !important;
   color: #028f68;
   border: none;
 }

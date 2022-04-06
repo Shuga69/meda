@@ -4,8 +4,13 @@ import downArrow from "../../assets/downArrow.svg";
 import upArrow from "../../assets/upArrow.svg";
 import "./style.css";
 import useCollapse from "react-collapsed";
-const InfoContainer = ({ text, children, dropDown = true }) => {
-  const [isExpanded, setExpanded] = useState(true);
+const InfoContainer = ({
+  text,
+  children,
+  dropDown = true,
+  expanded = true,
+}) => {
+  const [isExpanded, setExpanded] = useState(expanded);
   const { getToggleProps, getCollapseProps } = useCollapse({
     isExpanded,
   });

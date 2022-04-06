@@ -16,3 +16,20 @@
   background: #fafbfc;
   color: #333333;
 }
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .meda-menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90px;
+    height: 80px;
+
+    color: #333333;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+  }
+}
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
+}

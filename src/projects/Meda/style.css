@@ -1,11 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 .meda-body {
   display: flex;
   background: white;
-
+  font-family: "Roboto", sans-serif !important;
+  font-size: 14px;
   color: #333333;
 }
 .meda-body * {
-  font-size: 14px;
   box-sizing: border-box;
 }
 .meda-body a {
@@ -14,4 +15,12 @@
 .meda-container {
   width: 96%;
   margin: 0 auto;
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .meda-container {
+    width: 85%;
+  }
+}
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
 }

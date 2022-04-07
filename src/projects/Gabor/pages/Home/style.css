@@ -1,0 +1,15 @@
+.gabor-home-section {
+  height: 1500px;
+}
+
+.gabor-slider-section {
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(90deg, #eef1f7 68%, #fff 32%);
+  height: 750px;
+}
+.gabor-welcome-section {
+  background-color: #eef1f7;
+  margin-top: 552px;
+  padding-bottom: 72px;
+}

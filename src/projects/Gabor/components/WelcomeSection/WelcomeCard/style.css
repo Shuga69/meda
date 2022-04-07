@@ -1,0 +1,12 @@
+.gabor-welcome-card-text {
+  font-size: 16px;
+  line-height: 150%;
+  color: #636363;
+}
+.gabor-welcome-card-container {
+  display: flex;
+  justify-content: space-between;
+  height: 492px;
+  width: 23%;
+  margin-top: 24px;
+}

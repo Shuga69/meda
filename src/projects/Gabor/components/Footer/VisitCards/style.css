@@ -1,0 +1,13 @@
+.gabor-visit-section {
+  background: #171717;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gabor-visit-text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 14%;
+}

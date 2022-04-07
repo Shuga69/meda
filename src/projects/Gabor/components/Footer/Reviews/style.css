@@ -1,0 +1,13 @@
+.gabor-review-section {
+  background: #1d1d1d;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gabor-review-text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+}

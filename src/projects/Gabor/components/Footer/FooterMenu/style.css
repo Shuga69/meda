@@ -1,0 +1,20 @@
+.gabor-footer-menu-container {
+  display: flex;
+
+  background: #050505;
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+.gabor-footer-description {
+  font-size: 12px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 33px;
+}
+.gabor-footer-main-menu-item {
+  width: 14%;
+}
+.gabor-footer-menu-item-container {
+  display: flex;
+  justify-content: space-between;
+}

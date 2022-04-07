@@ -1,0 +1,13 @@
+.gabor-custom-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 1px solid #050505;
+  border-radius: 4px;
+  padding: 15px 26px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

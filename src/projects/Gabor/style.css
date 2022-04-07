@@ -1,0 +1,20 @@
+.gabor-body {
+  background: white;
+
+  font-size: 16px;
+  color: #050505;
+}
+.gabor-body * {
+  box-sizing: border-box;
+}
+.gabor-body a {
+  text-decoration: none;
+}
+.gabor-container {
+  width: 73.43%;
+  margin: 0 auto;
+}
+p {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}

@@ -1,0 +1,92 @@
+.side-drawer {
+  height: 100%;
+  background: #eef1f7;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  width: 40%;
+  max-width: 450px;
+  z-index: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(-100%);
+  transition: linear 0.3s;
+}
+
+.side-drawer.open {
+  transform: translateX(0);
+}
+
+.side-drawer__logo {
+  display: flex;
+}
+.side-drawer__logo-image {
+  width: 50%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.side-drawer__navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  height: 50%;
+  padding: 0 30px;
+}
+
+.side-drawer__navigation-link {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #050505;
+  transition: 0.25s linear;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.side-drawer__navigation-link + .side-drawer__navigation-link {
+  margin-top: 15px;
+}
+
+.side-drawer__navigation-link:hover {
+  color: #fff;
+  transition: 0.2s linear;
+  text-decoration: none;
+}
+
+.side-drawer__contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+.side-drawer__contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.side-drawer__contact span {
+  color: rgba(30, 132, 242, 0.9);
+}
+.side-drawer__header-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.side-drawer__header__inner-language {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+.side-drawer__header__inner-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}

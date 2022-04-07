@@ -1,0 +1,10 @@
+.gabor-welcome-title {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 130%;
+  padding-top: 72px;
+}
+.gabor-welcome-cards-container {
+  display: flex;
+  justify-content: space-between;
+}

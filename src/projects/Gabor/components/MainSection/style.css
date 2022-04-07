@@ -1,0 +1,56 @@
+.gabor-slider-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 40%;
+  height: 100%;
+}
+.gabor-slider-image {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+}
+.gabor-slider-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  padding-bottom: 30px;
+}
+.gabor-slider-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+  padding-bottom: 30px;
+}
+.gabor-slider-counter-text {
+  font-weight: 500;
+  font-size: 24px;
+}
+.gabor-slider-subtitle-text {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(5, 5, 5, 0.5);
+}
+.gabor-slider-title-text {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 150%;
+  margin-bottom: 32px;
+  margin-top: 12px;
+}
+.gabor-slider-information-text {
+  margin-bottom: 145px;
+  width: 100%;
+}
+.image {
+  opacity: 0;
+  position: absolute;
+}
+.image.slideActive {
+  opacity: 1;
+  position: absolute;
+}

@@ -7,7 +7,7 @@
 }
 .gabor-slider-image {
   position: absolute;
-  top: 15%;
+  top: 8%;
   left: 50%;
 }
 .gabor-slider-information {
@@ -53,4 +53,21 @@
 .image.slideActive {
   opacity: 1;
   position: absolute;
+  animation: opacity 0.5s ease-out;
+}
+@keyframes opacity {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }

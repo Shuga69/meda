@@ -2,15 +2,15 @@
   height: 100%;
   background: #eef1f7;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
-  width: 40%;
-  max-width: 450px;
+  width: 100%;
+
   z-index: 200;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   transform: translateX(-100%);
   transition: linear 0.3s;
 }
@@ -89,4 +89,8 @@
   display: flex;
   justify-content: space-between;
   width: 30%;
+}
+.header__inner-toggle.close {
+  position: absolute;
+  right: 50px;
 }

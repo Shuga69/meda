@@ -5,9 +5,13 @@
   justify-content: center;
   align-items: center;
 }
+
 .gabor-review-text-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 15%;
+  width: 80%;
+}
+.gabor-review-text-container :last-child {
+  margin-left: 12px;
 }

@@ -6,7 +6,7 @@
   padding: 0;
   position: fixed;
   z-index: 100;
-  transition: top 0.3s;
+  transition: top 0.3s, background 0.3s;
 }
 .brand-image {
 }
@@ -44,7 +44,7 @@
 }
 .gabor-header-nav-container {
   display: flex;
-  justify-content: space-between;
+
   width: 50%;
 }
 .header__navigation-link {
@@ -54,6 +54,7 @@
   color: #050505;
   transition: 0.25s linear;
   cursor: pointer;
+  padding-left: 32px;
 }
 
 .header__navigation-link:hover {
@@ -92,7 +93,7 @@
 .header__inner-language {
   display: flex;
   justify-content: space-between;
-  width: 25%;
+  width: 100px;
   align-items: center;
   margin: auto 10px auto 0;
 }

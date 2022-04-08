@@ -1,0 +1,33 @@
+.gabor-product-card-container {
+  width: max-content;
+  margin-top: 32px;
+}
+.gabor-product-card-sale-title {
+  padding: 6px 10px;
+  position: absolute;
+}
+.gabor-product-card-sale-title.top-sales {
+  background-color: #ed6400;
+  width: max-content;
+}
+.gabor-product-card-sale-title.sales {
+  background-color: #e12e2d;
+  width: max-content;
+}
+.gabor-product-card-sale-text {
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+}
+.gabor-product-card-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.gabor-product-card-price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #e1202c;
+  margin-bottom: 10px;
+}

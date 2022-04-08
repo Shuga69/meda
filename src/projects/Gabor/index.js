@@ -5,6 +5,7 @@ import Backdrop from "./components/Header/Backdrop";
 import SideDrawer from "./components/Header/SideDrawer";
 import Header from "./components/Header";
 import "./style.css";
+import CollectionItems from "./pages/CollectionItems";
 const Gabor = () => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
 
@@ -31,6 +32,7 @@ const Gabor = () => {
         {backdrop}
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/collection' element={<CollectionItems />} />
         </Routes>
       </Router>
     </div>

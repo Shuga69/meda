@@ -1,0 +1,58 @@
+.gabor-collection__inner {
+  margin-top: 85px;
+  margin-bottom: 72px;
+}
+.gabor-collection-title {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 130%;
+}
+.gabor-collection-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #636363;
+}
+.gabor-collection-btn {
+  text-decoration: underline;
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  width: max-content;
+  padding: 0;
+  cursor: pointer;
+}
+.gabor-collection-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  padding-top: 45px;
+  height: 270px;
+}
+.gabor-collection-products-card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gabor-collection-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+.gabor-collection-pagination :last-child {
+  margin-right: 0px;
+}
+.gabor-collection-pagination-button {
+  border-radius: 50%;
+  background: none;
+  border: none;
+  width: 42px;
+  height: 42px;
+  font-weight: 500;
+  font-size: 15px;
+  margin-right: 16px;
+  cursor: pointer;
+}

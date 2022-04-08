@@ -35,7 +35,7 @@ const Header = ({ drawerClickHandler, toggle }) => {
     <header
       style={{
         top: visible ? 0 : "-83px",
-        // background: navStyle ? "transparent" : "white",
+        background: navStyle ? "transparent" : "white",
       }}
       className='header'>
       <div className='gabor-container'>
@@ -50,7 +50,7 @@ const Header = ({ drawerClickHandler, toggle }) => {
                 Shoes
               </NavLink>
               <NavLink
-                to='services'
+                to='/collection'
                 smooth={true}
                 className='header__navigation-link'>
                 Trainers

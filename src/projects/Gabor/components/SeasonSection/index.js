@@ -91,6 +91,7 @@ const SeasonSection = () => {
           <IconButton onClick={nextSlide} icon={right} />
         </div>
       </div>
+
       <div className='gabor-season-cards-section'>
         {data.map((slide, index, arr) => {
           let classes;
@@ -117,30 +118,6 @@ const SeasonSection = () => {
             </div>
           );
         })}
-        {/* <SeasonCard
-          title='Stylish Trainers'
-          subtitle='18 items'
-          image={seasonImage1}
-          color={{ background: "#FBF5F0" }}
-        />
-        <SeasonCard
-          title='Stylish Trainers'
-          subtitle='18 items'
-          image={seasonImage1}
-          color={{ background: "#F3EFEC" }}
-        />
-        <SeasonCard
-          title='Stylish Trainers'
-          subtitle='18 items'
-          image={seasonImage1}
-          color={{ background: "#F5F5F5" }}
-        />
-        <SeasonCard
-          title='Stylish Trainers'
-          subtitle='18 items'
-          image={seasonImage1}
-          color={{ background: "#EDF0ED" }}
-        /> */}
       </div>
     </div>
   );

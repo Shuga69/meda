@@ -52,11 +52,13 @@ const FooterMenu = () => {
               text='The Clinkard Group Registered office Eveline House, Cannon Park Way, Middlesbrough, TS1 5JU, England Company Registration Number 02771054 VAT no. GB 633 2528 55'
             />
           </div>
-          <FooterMenuItem menuList={menuList[0]} title='Gabor' />
-          <FooterMenuItem menuList={menuList[1]} title='Customer Info' />
-          <FooterMenuItem menuList={menuList[2]} title='Help' />
-          <FooterMenuItem menuList={menuList[3]} title='Features' />
-          <FooterMenuItem menuList={menuList[4]} title='Departments' />
+          <div className='gabor-footer-menu-items-container'>
+            <FooterMenuItem menuList={menuList[0]} title='Gabor' />
+            <FooterMenuItem menuList={menuList[1]} title='Customer Info' />
+            <FooterMenuItem menuList={menuList[2]} title='Help' />
+            <FooterMenuItem menuList={menuList[3]} title='Features' />
+            <FooterMenuItem menuList={menuList[4]} title='Departments' />
+          </div>
         </div>
       </div>
     </div>

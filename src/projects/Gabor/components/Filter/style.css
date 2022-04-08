@@ -1,0 +1,60 @@
+.gabor-filter-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10%;
+}
+.gabor-filter-container {
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 53px;
+  margin-bottom: 16px;
+  padding: 16px 0px;
+}
+.gabor-filter-items {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+.gabor-filter-items-container {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.gabor-filter-sort-container {
+  display: flex;
+
+  width: 11%;
+  justify-content: space-between;
+}
+.gabor-filter-sort-title {
+  display: flex;
+  justify-content: space-between;
+
+  width: 50%;
+}
+.gabor-filter-sort-text {
+  font-weight: 700;
+  font-size: 15px;
+}
+.gabor-filter-result-item {
+  display: flex;
+
+  padding: 9px 10px;
+  background: #eeeeee;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.gabor-filter-result-item-container {
+  display: flex;
+
+  width: 70%;
+}
+.gabor-filter-result-item-section {
+  display: flex;
+  justify-content: space-between;
+}
+.gabor-filter-result-item img {
+  cursor: pointer;
+}

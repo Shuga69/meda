@@ -24,7 +24,7 @@
 
 .toggle-button__line.open:nth-child(1) {
   transform: rotate(-45deg) translate(-7px, 15px);
-  background: #fff;
+  background: #e1202c;
 
   height: 3px;
 }
@@ -35,6 +35,6 @@
 
 .toggle-button__line.open:nth-child(3) {
   transform: rotate(45deg) translate(-7px, -16px);
-  background: #fff;
+  background: #e1202c;
   height: 3px;
 }

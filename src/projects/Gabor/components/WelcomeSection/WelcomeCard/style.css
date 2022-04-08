@@ -10,3 +10,15 @@
   width: 23%;
   margin-top: 24px;
 }
+@media all and (max-width: 1368px) and (max-height: 912px) and (orientation: landscape) {
+  .gabor-welcome-card-container {
+    display: flex;
+    justify-content: space-between;
+    height: 492px;
+    width: 40%;
+    margin-top: 100px;
+  }
+  .gabor-welcome-card-text {
+    margin: 24px 0px;
+  }
+}

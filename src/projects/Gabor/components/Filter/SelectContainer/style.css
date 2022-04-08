@@ -1,0 +1,32 @@
+.gabor-filter-select-item {
+  background: transparent;
+  border: none;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+.gabor-filter-select-option {
+  font-weight: 500;
+  font-size: 15px;
+
+  border: 1px solid #e5e5e5;
+}
+.gabor-filter-select-item::-ms-expand {
+  display: none;
+}
+.gabor-filter-select-item option {
+  font-weight: normal;
+}
+*[dir="rtl"] .gabor-filter-select-item,
+:root:lang(ar) .gabor-filter-select-item,
+:root:lang(iw) .gabor-filter-select-item {
+  background-position: left 0.7em top 50%, 0 0;
+  padding: 0.6em 0.8em 0.5em 1.4em;
+}
+
+.gabor-filter-option-item {
+  display: none;
+}
+.gabor-filter-option-item.open {
+  display: block;
+  position: absolute;
+}

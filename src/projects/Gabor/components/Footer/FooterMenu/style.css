@@ -18,3 +18,24 @@
   display: flex;
   justify-content: space-between;
 }
+.gabor-footer-menu-items-container {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 1180px) and (max-height: 820px) and (orientation: landscape) {
+  .gabor-footer-menu-item-container {
+    flex-direction: column;
+  }
+  .gabor-footer-main-menu-item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .gabor-footer-menu-items-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

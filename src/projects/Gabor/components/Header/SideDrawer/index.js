@@ -5,9 +5,10 @@ import language from "../../../assets/language.svg";
 import bag from "../../../assets/My_bag_icon.svg";
 import search from "../../../assets/Search_icon.svg";
 import signIn from "../../../assets/Sign_in_icon.svg";
+import ToggleButton from "../ToggleButton";
 import wishList from "../../../assets/Wish_list_icon.svg";
 import "./style.css";
-const SideDrawer = ({ show, onClick }) => {
+const SideDrawer = ({ show, onClick, drawerClickHandler, toggle }) => {
   let drawerClasses = "side-drawer";
   if (show) {
     drawerClasses = "side-drawer open";
@@ -16,7 +17,11 @@ const SideDrawer = ({ show, onClick }) => {
     <div className={drawerClasses}>
       <div className='side-drawer__logo'>
         <img src={logo} className='side-drawer__logo-image' alt='Logo' />
+        <div className='header__inner-toggle close'>
+          <ToggleButton onClick={onClick} toggle={show} />
+        </div>
       </div>
+
       <nav className='side-drawer__navigation'>
         <NavLink
           onClick={onClick}
@@ -64,10 +69,6 @@ const SideDrawer = ({ show, onClick }) => {
         </NavLink>
       </nav>
       <div className='side-drawer__header-info'>
-        <div className='side-drawer__header__inner-language'>
-          <img src={language} />
-          <p> GBP (£)</p>
-        </div>
         <div className='side-drawer__header__inner-icons'>
           <img src={search} />
           <img src={signIn} />

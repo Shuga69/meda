@@ -43,7 +43,7 @@ const FooterMenu = () => {
   ];
   return (
     <div className='gabor-footer-menu-container'>
-      <div className='gabor-container'>
+      <div className='gabor-footer-container'>
         <div className='gabor-footer-menu-item-container'>
           <div className='gabor-footer-main-menu-item'>
             <img src={footerLogo} />

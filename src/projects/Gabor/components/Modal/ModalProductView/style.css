@@ -1,0 +1,53 @@
+.gabor-modal-product-view-container {
+  padding: 24px 0px;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+}
+.gabor-modal-product-title-container {
+  display: flex;
+}
+.gabor-modal-product-title {
+  margin-left: 30px;
+}
+.gabor-modal-product-description {
+  display: flex;
+}
+.gabor-modal-product-description-item {
+  margin-right: 30px;
+}
+.gabor-modal-product-price-container {
+  display: flex;
+}
+.gabor-modal-product-price {
+  margin-right: 33px;
+}
+.gabor-modal-product-title-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+.gabor-modal-product-description-title {
+  font-weight: 500;
+  font-size: 15px;
+  color: rgba(5, 5, 5, 0.5);
+  margin-bottom: 16px;
+}
+.gabor-modal-product-description-text {
+  font-weight: 600;
+  font-size: 15px;
+}
+.gabor-modal-product-price-sale {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #5d5d5d;
+  text-decoration: line-through;
+}
+.gabor-modal-product-price-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #e12e2d;
+}

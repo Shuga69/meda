@@ -1,0 +1,144 @@
+.gabor-slider-product-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 58%;
+  width: 100%;
+  margin-top: 32px;
+}
+.gabor-product-slides-container {
+  position: absolute;
+  left: 300px;
+}
+.mySlides {
+  position: absolute;
+  opacity: 0;
+}
+.gabor-slider-product-container {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+
+  height: 77%;
+  width: 100%;
+}
+.prev,
+.next {
+  align-self: center;
+}
+.gabor-slider-product-slides-button {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+.gabor-slider-product-slide-btn {
+  width: 120px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.gabor-slider-product-slide-btn-image {
+  width: 160px;
+  height: 90px;
+}
+.gabor-product-slider-image {
+  opacity: 0;
+  position: absolute;
+}
+.gabor-product-slider-image.slideActive {
+  opacity: 1;
+  position: absolute;
+  animation: opacity 0.5s ease-out;
+}
+@media all and (max-width: 1368px) and (max-height: 912px) and (orientation: landscape) {
+  .gabor-slider-product-slide-btn-image {
+    width: 80px;
+    height: 50px;
+  }
+  .gabor-slider-product-slide-btn {
+    width: 80px;
+    height: 60px;
+  }
+  .gabor-product-slider-image {
+    width: 450px;
+  }
+  .gabor-product-slides-container {
+    left: 250px;
+    bottom: 500px;
+  }
+}
+@media all and (max-width: 1180px) and (max-height: 820px) and (orientation: landscape) {
+  .gabor-product-slider-image {
+    width: 400px;
+  }
+  .gabor-product-slides-container {
+    left: 210px;
+    bottom: 400px;
+  }
+}
+@media all and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+  .gabor-slider-product-slide-btn-image {
+    width: 70px;
+    height: 40px;
+  }
+  .gabor-slider-product-slide-btn {
+    width: 70px;
+    height: 50px;
+  }
+  .gabor-product-slider-image {
+    width: 350px;
+  }
+  .gabor-product-slides-container {
+    left: 180px;
+    bottom: 320px;
+  }
+}
+@media all and (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
+  .gabor-slider-product-section {
+    height: 63%;
+  }
+  .gabor-slider-product-slide-btn-image {
+    width: 100px;
+    height: 60px;
+  }
+  .gabor-slider-product-slide-btn {
+    width: 100px;
+    height: 80px;
+    border: 1px solid #a8a8a8;
+    border-radius: 4px;
+  }
+  .gabor-product-slider-image {
+    width: 550px;
+  }
+  .gabor-product-slides-container {
+    left: 180px;
+    top: 350px;
+  }
+}
+@media all and (max-width: 820px) and (max-height: 1180px) and (orientation: portrait) {
+  .gabor-slider-product-slide-btn-image {
+    width: 90px;
+    height: 50px;
+  }
+  .gabor-slider-product-slide-btn {
+    width: 90px;
+    height: 70px;
+    border: 1px solid #a8a8a8;
+    border-radius: 4px;
+  }
+  .gabor-product-slider-image {
+    width: 500px;
+  }
+  .gabor-product-slides-container {
+    left: 165px;
+    top: 350px;
+  }
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .gabor-product-slides-container {
+    left: 140px;
+  }
+}

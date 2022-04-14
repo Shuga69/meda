@@ -1,0 +1,23 @@
+.ron-main__inner {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin-top: 100px;
+}
+.ron-main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ron-process-background {
+  background: linear-gradient(#fff, #fff2e8);
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-position: 50% 50%;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120%;
+}

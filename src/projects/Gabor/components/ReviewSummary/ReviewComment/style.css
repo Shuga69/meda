@@ -1,0 +1,19 @@
+.gabor-review-product-comment {
+  display: flex;
+  justify-content: space-between;
+  height: max-content;
+
+  padding: 20px 0px;
+  border-top: 1px solid #e6e6e6;
+
+  border-spacing: 0px;
+}
+.gabor-review-product-comment-text {
+  width: 65%;
+}
+.gabor-review-product-comment-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95px;
+}

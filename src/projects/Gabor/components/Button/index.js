@@ -7,7 +7,7 @@ const Button = ({ className, style, onClick, type, text, icon, id }) => {
       className={className ? className : `gabor-custom-button ${type}`}
       style={style}
       onClick={onClick}>
-      {icon}
+      {icon && <img className='gabor-btn-icon' src={icon} />}
       {text}
     </button>
   );

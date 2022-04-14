@@ -1,7 +1,3 @@
-.gabor-home-section {
-  height: 1500px;
-}
-
 .gabor-slider-section {
   display: flex;
   align-items: flex-end;
@@ -10,6 +6,11 @@
 }
 .gabor-welcome-section {
   background-color: #eef1f7;
-  margin-top: 552px;
+
   padding-bottom: 72px;
+}
+@media all and (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
+  .gabor-slider-section {
+    height: 1220px;
+  }
 }

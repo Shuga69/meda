@@ -6,6 +6,7 @@ import SideDrawer from "./components/Header/SideDrawer";
 import Header from "./components/Header";
 import "./style.css";
 import CollectionItems from "./pages/CollectionItems";
+import ProductPage from "./pages/ProductPage";
 const Gabor = () => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
 
@@ -33,6 +34,7 @@ const Gabor = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/collection' element={<CollectionItems />} />
+          <Route path='/product' element={<ProductPage />} />
         </Routes>
       </Router>
     </div>

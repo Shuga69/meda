@@ -1,0 +1,156 @@
+.gabor-product-main-section {
+  display: flex;
+  height: 69%;
+  background: linear-gradient(90deg, #eef1f7 57%, #fff 32%);
+}
+
+.gabor-product-main-container {
+  display: flex;
+  padding-top: 128px;
+  justify-content: space-between;
+  width: 100%;
+}
+.gabor-product-slider-section {
+  width: 58%;
+}
+.gabor-product-slider-subtitle-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.gabor-product-slider-subtitle {
+  font-weight: 600;
+  font-size: 15px;
+  color: #9fa6b1;
+  text-transform: uppercase;
+}
+.gabor-product-slider-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+.gabor-product-slider-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  color: #050505;
+}
+.gabor-product-inforamtion-btn-size {
+  background: #f7f7f7;
+  opacity: 0.5;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 10px 16px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.gabor-product-information-section {
+  width: 38%;
+  height: 907px;
+}
+.gabor-product-information-size-container {
+  width: 100%;
+  display: flex;
+
+  flex-wrap: wrap;
+}
+.gabor-product-information-top-btn {
+  margin-bottom: 10px;
+}
+.gabor-product-add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 26px;
+  background: #050505;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+}
+.gabor-product-button-container {
+  display: flex;
+  align-items: center;
+}
+.wish-btn {
+  margin-left: 30px;
+  border: 1px solid #e7e7e7;
+}
+.gabor-product-detail-ul {
+  padding-left: 20px !important;
+}
+.gabor-product-detail-ul li {
+  margin-top: 10px !important;
+}
+.gabor-product-information-title {
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+.gabor-product-check-label {
+  display: flex;
+  flex-direction: column;
+}
+.gabor-product-check-container {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.gabor-product-hr {
+  border: 1px solid #e7e7e7;
+  margin-bottom: 24px;
+  margin-top: 16px;
+}
+
+.gabor-product-information-title.size {
+  margin-bottom: 6px;
+  margin-top: 53px;
+}
+.gabor-review-product-stars {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 18%;
+}
+.gabor-product-information-color-image {
+  height: 48px;
+}
+@media all and (max-width: 1368px) and (max-height: 912px) and (orientation: landscape) {
+  .gabor-product-information-color-image {
+    height: 38px;
+  }
+}
+@media all and (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
+  .gabor-product-main-container {
+    flex-direction: column;
+  }
+  .gabor-product-main-section {
+    background: linear-gradient(
+      to bottom,
+      #fff,
+      #fff 49%,
+      #eef1f7 49%,
+      #eef1f7 100%
+    );
+  }
+  .gabor-product-information-section {
+    width: 100%;
+    height: 907px;
+  }
+  .gabor-product-slider-section {
+    width: 100%;
+    height: 700px;
+  }
+  .gabor-product-inforamtion-btn-size {
+    opacity: 1;
+  }
+  .wish-btn {
+    margin-left: 30px;
+    border: 1px solid #050505;
+  }
+}

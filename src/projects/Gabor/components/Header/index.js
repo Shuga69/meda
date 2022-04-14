@@ -8,14 +8,18 @@ import search from "../../assets/Search_icon.svg";
 import signIn from "../../assets/Sign_in_icon.svg";
 import wishList from "../../assets/Wish_list_icon.svg";
 import { debounce } from "../../tools/debounce";
+import useModal from "../../hooks/useModal";
+import Modal from "../Modal";
 import "./style.css";
+import IconButton from "../IconButton";
 const Header = ({ drawerClickHandler, toggle }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const { isShowing, toggle: toggleModal } = useModal();
   const [navStyle, setNavStyle] = useState(true);
   const handleScroll = debounce(() => {
     const currentScrollPos = window.pageYOffset;
-    setNavStyle(currentScrollPos < 200);
+    setNavStyle(currentScrollPos < 100);
     setVisible(
       (prevScrollPos > currentScrollPos &&
         prevScrollPos - currentScrollPos > 40) ||
@@ -46,7 +50,7 @@ const Header = ({ drawerClickHandler, toggle }) => {
             </NavLink>
 
             <nav className='header-navigation'>
-              <NavLink to='/' className='header__navigation-link'>
+              <NavLink to='/collection' className='header__navigation-link'>
                 Shoes
               </NavLink>
               <NavLink
@@ -56,22 +60,22 @@ const Header = ({ drawerClickHandler, toggle }) => {
                 Trainers
               </NavLink>
               <NavLink
-                to='portfolio'
+                to='/collection'
                 smooth={true}
                 className='header__navigation-link'>
                 Sandals
               </NavLink>
-              <NavLink to='/brief' className='header__navigation-link'>
+              <NavLink to='/collection' className='header__navigation-link'>
                 Boots
               </NavLink>
               <NavLink
-                to='contact'
+                to='/collection'
                 smooth={true}
                 className='header__navigation-link'>
                 Handbags
               </NavLink>
               <NavLink
-                to='contact'
+                to='/collection'
                 smooth={true}
                 className='header__navigation-link'>
                 Sales
@@ -87,9 +91,10 @@ const Header = ({ drawerClickHandler, toggle }) => {
               <img src={search} />
               <img src={signIn} />
               <img src={wishList} />
-              <img src={bag} />
+              <IconButton onClick={toggleModal} icon={bag} />
             </div>
           </div>
+          <Modal isShowing={isShowing} hide={toggleModal} />
           <div className='header__inner-toggle'>
             <ToggleButton onClick={drawerClickHandler} toggle={toggle} />
           </div>

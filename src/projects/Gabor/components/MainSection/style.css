@@ -46,11 +46,11 @@
   margin-bottom: 145px;
   width: 100%;
 }
-.image {
+.gabor-main-slider-image {
   opacity: 0;
   position: absolute;
 }
-.image.slideActive {
+.gabor-main-slider-image.slideActive {
   opacity: 1;
   position: absolute;
   animation: opacity 0.5s ease-out;
@@ -69,5 +69,39 @@
   100% {
     display: block;
     opacity: 1;
+  }
+}
+@media all and (max-width: 1180px) and (max-height: 820px) and (orientation: landscape) {
+  .gabor-main-slider-image {
+    width: 560px;
+  }
+  .gabor-slider-image {
+    top: 12%;
+  }
+}
+@media all and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+  .gabor-main-slider-image {
+    width: 500px;
+  }
+  .gabor-slider-image {
+    top: 17%;
+  }
+}
+@media all and (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
+  .gabor-slider-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+  }
+  .gabor-main-slider-image {
+    width: 500px;
+  }
+  .gabor-slider-image {
+    position: absolute;
+    top: 8%;
+    left: 22%;
   }
 }

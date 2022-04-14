@@ -56,3 +56,8 @@
   margin-right: 16px;
   cursor: pointer;
 }
+@media all and (max-width: 820px) and (max-height: 1180px) and (orientation: portrait) {
+  .gabor-collection-title-container {
+    width: 70%;
+  }
+}

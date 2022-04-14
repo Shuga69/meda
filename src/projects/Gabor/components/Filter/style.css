@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 10%;
+  width: 9%;
 }
 .gabor-filter-container {
   border-bottom: 1px solid #e5e5e5;
@@ -19,20 +19,20 @@
 }
 .gabor-filter-items-container {
   display: flex;
-  width: 50%;
+  width: 60%;
   justify-content: space-between;
 }
 .gabor-filter-sort-container {
   display: flex;
-
-  width: 11%;
+  align-items: center;
+  width: 14%;
   justify-content: space-between;
 }
 .gabor-filter-sort-title {
   display: flex;
   justify-content: space-between;
 
-  width: 50%;
+  width: 35%;
 }
 .gabor-filter-sort-text {
   font-weight: 700;
@@ -57,4 +57,39 @@
 }
 .gabor-filter-result-item img {
   cursor: pointer;
+}
+@media all and (max-width: 1368px) and (max-height: 912px) and (orientation: landscape) {
+  .gabor-filter-items-container {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .gabor-filter-sort-container {
+    width: 17%;
+  }
+}
+@media all and (max-width: 1180px) and (max-height: 820px) and (orientation: landscape) {
+  .gabor-filter-items-container {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .gabor-filter-sort-container {
+    width: 17%;
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
+  .gabor-filter-items-container {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .gabor-filter-sort-container {
+    width: 17%;
+    flex-direction: column;
+  }
+  .gabor-filter-title {
+    width: 13%;
+  }
 }

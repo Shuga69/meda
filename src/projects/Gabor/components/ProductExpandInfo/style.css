@@ -1,0 +1,6 @@
+.gabor-article-container {
+}
+.gabor-article-btn {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,41 @@
+.ron-main-slider-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #212529;
+  padding-bottom: 20px;
+}
+.ron-main-slider-btn.active {
+  border-bottom: 2px solid #f85255;
+  color: #f85255;
+}
+.ron-main-slider-btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.ron-main-slider-content {
+  width: 90%;
+  margin-top: 76px;
+}
+.ron-main-slider-content-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+}
+.ron-main-slider-content-subtitle {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+}
+.ron-main-slider-content-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.ron-main-slider-section {
+  display: flex;
+}

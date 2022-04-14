@@ -1,0 +1,85 @@
+.gabor-product-review-summary {
+  margin-top: 52px;
+
+  padding: 32px;
+}
+.gabor-product-review-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+
+  width: 100%;
+}
+.gabor-product-review__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+}
+.gabor-product-review-menu-item {
+  border: none;
+  background: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(5, 5, 5, 0.5);
+  padding: 13px 0px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.gabor-product-review-summary-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+}
+.gabor-product-review-summary-container {
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 32px;
+}
+.gabor-product-review-summary-title-left {
+}
+.gabor-product-review-summary-title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.gabor-product-review-summary-title-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 100px;
+}
+.gabor-product-review-summary-comment-container {
+  margin-top: 32px;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+.gabor-product-review-summary-add-comment {
+  border-top: 1px solid #e6e6e6;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media all and (max-width: 1368px) and (max-height: 912px) and (orientation: landscape) {
+  .gabor-product-review-summary-container {
+    width: 70%;
+  }
+}
+@media all and (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
+  .gabor-product-review-summary-container {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+  .gabor-product-review-summary-container {
+    width: 100%;
+  }
+}

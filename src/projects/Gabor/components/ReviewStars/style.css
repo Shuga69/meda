@@ -1,0 +1,5 @@
+.gabor-review-stars-container {
+  display: flex;
+  justify-content: space-between;
+  width: 108px;
+}

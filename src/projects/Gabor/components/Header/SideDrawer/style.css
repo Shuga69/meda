@@ -88,9 +88,20 @@
 .side-drawer__header__inner-icons {
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 40%;
+}
+.side-drawer__header__inner-icons img {
+  width: 8%;
 }
 .header__inner-toggle.close {
   position: absolute;
-  right: 50px;
+  right: 90px;
+}
+@media all and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+  .side-drawer__logo-image {
+    width: 20%;
+  }
+  .side-drawer__header__inner-icons {
+    width: 25%;
+  }
 }

@@ -1,0 +1,46 @@
+.gabor-season-title {
+  font-weight: 600;
+  font-size: 42px;
+}
+.gabor-season-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gabor-season-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  color: #636363;
+}
+.gabor-season-cards-slides {
+  height: 540px;
+}
+.gabor-season-arrows-container {
+  display: flex;
+  justify-content: space-between;
+
+  width: 5%;
+}
+
+.gabor-season-cards-section {
+  display: flex;
+  margin-top: 32px;
+  border-radius: 4px;
+}
+
+@keyframes opacity {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}

@@ -1,6 +1,6 @@
 .gabor-season-card-section {
   width: max-content;
-  position: relative;
+  position: absolute;
   opacity: 0;
   margin-right: 30px;
 }
@@ -42,5 +42,13 @@
   100% {
     display: block;
     opacity: 1;
+  }
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .gabor-season-card-section {
+    width: 80%;
+  }
+  .gabor-season-card-image {
+    width: 100%;
   }
 }

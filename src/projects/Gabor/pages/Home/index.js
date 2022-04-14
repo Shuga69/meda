@@ -5,6 +5,7 @@ import Text from "../../components/Text";
 import "./style.css";
 import Footer from "../../components/Footer";
 import IconButton from "../../components/IconButton";
+import SeasonCard from "../../components/SeasonSection/SeasonCard";
 import MainSection from "../../components/MainSection";
 import SeasonSection from "../../components/SeasonSection";
 import WelcomeSection from "../../components/WelcomeSection";
@@ -16,8 +17,10 @@ const Home = () => {
           <MainSection />
         </div>
       </div>
-      <div className='gabor-container'>
-        <SeasonSection />
+      <div className='gabor-season-section'>
+        <div className='gabor-container'>
+          <SeasonSection />
+        </div>
       </div>
       <div className='gabor-welcome-section'>
         <div className='gabor-container'>

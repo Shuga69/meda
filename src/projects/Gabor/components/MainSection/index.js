@@ -54,7 +54,12 @@ const MainSection = () => {
           if (current === 0 && index === arr.length - 1) classes = "prevSlide";
           if (current === arr.length - 1 && index === 0) classes = "nextSlide";
 
-          return <img className={"image " + classes} src={arr[index].image} />;
+          return (
+            <img
+              className={"gabor-main-slider-image " + classes}
+              src={arr[index].image}
+            />
+          );
         })}
       </div>
     </div>

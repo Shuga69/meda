@@ -1,0 +1,16 @@
+.ron-solution-card-container {
+  display: flex;
+  justify-content: space-between;
+}
+.ron-solution-card-text-container {
+  width: 40%;
+}
+.ron-solution-card-title {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+.ron-solution-card-list-title {
+  font-weight: 700;
+  margin-top: 14px;
+}

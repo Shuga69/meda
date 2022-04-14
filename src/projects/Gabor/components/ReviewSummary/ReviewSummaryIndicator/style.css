@@ -1,0 +1,16 @@
+.gabor-review-summary-indicator-container {
+  display: flex;
+  align-items: center;
+
+  width: 229px;
+}
+.gabor-review-summary-indicator {
+  width: 171px;
+  height: 5px;
+  margin-left: 5px;
+}
+
+.gabor-review-summary-indicator-text {
+  font-weight: 500;
+  font-size: 15px;
+}

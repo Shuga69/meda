@@ -8,3 +8,6 @@
   padding-right: 10px;
   padding-left: 10px;
 }
+.gabor-tab-menu-container :first-child {
+  padding-left: 0px;
+}

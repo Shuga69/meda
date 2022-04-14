@@ -31,3 +31,23 @@
   color: #e1202c;
   margin-bottom: 10px;
 }
+.gabor-product__navigation-link {
+  text-decoration: none;
+  color: #050505;
+}
+@media all and (max-width: 820px) and (max-height: 1180px) and (orientation: portrait) {
+  .gabor-product-card-container {
+    width: 46%;
+  }
+  .gabor-slider-product {
+    width: 100%;
+  }
+  .gabor-product-card-image {
+    width: 100%;
+  }
+}
+@media all and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .gabor-product-slides-container {
+    left: 140px;
+  }
+}

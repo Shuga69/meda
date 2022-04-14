@@ -1,0 +1,30 @@
+.ron-footer-container {
+  display: flex;
+  height: 290px;
+  width: 80%;
+}
+.ron-footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  padding: 48px 0px;
+}
+.ron-footer-content-item-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ron-footer-content-item * {
+  margin-bottom: 20px;
+}
+.ron-footer-menu-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+.ron-footer-menu-item {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #404853;
+}

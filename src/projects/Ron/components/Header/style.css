@@ -1,0 +1,39 @@
+.ron-header__inner {
+  display: flex;
+  padding: 25px 0px;
+  width: 100%;
+}
+.ron-header-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+.ron-header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.ron-header {
+  width: 100%;
+}
+.ron-header__navigation-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #237e8a;
+  transition: 0.25s linear;
+  cursor: pointer;
+  padding-left: 32px;
+}
+.ron-header__navigation-link:first-child {
+  padding-left: 0px;
+}
+.ron-header-button {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}

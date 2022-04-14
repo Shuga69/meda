@@ -1,0 +1,23 @@
+.ron-process-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  margin-top: 75px;
+}
+.ron-process-section {
+  margin-top: 51px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
+.ron-process-container {
+  margin-top: 52px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.ron-process-button-container {
+  margin-top: 75px;
+}

@@ -93,6 +93,7 @@ const CollectionItems = () => {
   const renderPageNumbers = pageNumbers.map((number) => {
     return (
       <Button
+        key={number}
         id={number}
         style={
           number === currentPage
@@ -112,10 +113,11 @@ const CollectionItems = () => {
     indexOfFirstProduct,
     indexOfLastProduct
   );
-  console.log(currentProduct);
+
   const renderProduct = currentProduct.map((item, index) => {
     return (
       <ProductCard
+        key={index}
         title={item.title}
         price={item.price}
         image={item.image}

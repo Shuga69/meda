@@ -8,7 +8,11 @@ const FooterMenuItem = ({ title, menuList }) => {
       <Text className='gabor-footer-menu-title' text={title} />
       {menuList.map((item) => {
         return (
-          <Text className='gabor-footer-menu-text-item' text={item.text} />
+          <Text
+            key={item.text}
+            className='gabor-footer-menu-text-item'
+            text={item.text}
+          />
         );
       })}
     </div>

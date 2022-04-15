@@ -8,18 +8,15 @@ const ActivitiesItem = ({ date, title, by }) => {
       <div className='meda-activities-info'>
         <Text
           style={{
-            "font-size": "14px",
-            "font-weight": "500",
+            fontSize: "14px",
+            fontWeight: "500",
             color: "#000000",
           }}
           text={title}
         />
         <div className='meda-input-by-text'>
-          <Text
-            style={{ "margin-top": "5px", "white-space": "pre" }}
-            text={`by `}
-          />
-          <Text style={{ "margin-top": "5px", color: "#028F68" }} text={by} />
+          <Text style={{ marginTop: "5px", whiteSpace: "pre" }} text={`by `} />
+          <Text style={{ marginTop: "5px", color: "#028F68" }} text={by} />
         </div>
       </div>
     </div>

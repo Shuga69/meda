@@ -4,22 +4,22 @@ import "./style.css";
 
 const SideTitle = ({ text }) => {
   return (
-    <div className='side-title-container'>
+    <div className='meda-side-title-container'>
       <Text
         style={{
-          "font-weight": 500,
-          "font-size": "20px",
+          fontWeight: 500,
+          fontSize: "20px",
           color: "#000000",
         }}
         text={text}
       />
-      <div className='add-button'>
+      <div className='meda-add-button'>
         <Text
           style={{
-            "font-weight": 500,
-            "font-size": "24px",
+            fontWeight: 500,
+            fontSize: "24px",
             color: "#FFF",
-            "line-height": "0px",
+            lineHeight: "0px",
           }}
           text='+'
         />

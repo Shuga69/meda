@@ -165,8 +165,8 @@ const Chart = () => {
       <div className='meda-chart-title'>
         <Text
           style={{
-            "font-weight": "500",
-            "font-size": "16px",
+            fontWeight: "500",
+            fontSize: "16px",
             color: "#000000",
           }}
           text='Total patients per month'
@@ -182,22 +182,19 @@ const Chart = () => {
       <div className='meda-chart-view-container'>
         <div className='meda-chart-view-info-container'>
           <div className='meda-chart-view-info'>
-            <Text style={{ "font-size": "16px" }} text='Average' />
-            <Text
-              style={{ "font-weight": "300", "font-size": "48px" }}
-              text='213'
-            />
+            <Text style={{ fontSize: "16px" }} text='Average' />
+            <Text style={{ fontWeight: "300", fontSize: "48px" }} text='213' />
           </div>
           <div className='meda-chart-view-info-bottom'>
             <div className='meda-chart-view-info'>
               <Text
-                style={{ "font-size": "12px", "font-weight": "300" }}
+                style={{ fontSize: "12px", fontWeight: "300" }}
                 text='Admitted'
               />
               <Text
                 style={{
-                  "font-weight": "300",
-                  "font-size": "30px",
+                  fontWeight: "300",
+                  fontSize: "30px",
                   color: "#028F68",
                 }}
                 text='129'
@@ -206,13 +203,13 @@ const Chart = () => {
             <div className='meda-chart-view-info-line'></div>
             <div className='meda-chart-view-info'>
               <Text
-                style={{ "font-size": "12px", "font-weight": "300" }}
+                style={{ fontSize: "12px", fontWeight: "300" }}
                 text='Discharged'
               />
               <Text
                 style={{
-                  "font-weight": "300",
-                  "font-size": "30px",
+                  fontWeight: "300",
+                  fontSize: "30px",
                   color: "#FF5247",
                 }}
                 text='84'

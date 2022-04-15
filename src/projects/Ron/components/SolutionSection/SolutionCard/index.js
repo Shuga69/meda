@@ -20,7 +20,7 @@ const SolutionCard = ({
         {children}
         <Text text='The EverythingLegal platform allows for your notary to be completely remote.' />
       </div>
-      <img src={image} />
+      <img className='ron-solution-image' src={image} />
     </div>
   );
 };

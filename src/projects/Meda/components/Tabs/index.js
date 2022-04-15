@@ -6,11 +6,11 @@ const Tabs = ({ children, type }) => {
   const [activeTab, setActiveTab] = useState(children[0].props.label);
   const onClickTabItem = (tab, index) => {
     setActiveTab(tab);
-    children[index].props.onClick();
+    type !== "meda-side-bar" && children[index].props.onClick();
   };
   return (
-    <div className='tabs'>
-      <ol className='tab-list'>
+    <div className='meda-tabs'>
+      <ol className='meda-tab-list'>
         {children.map((child, index) => {
           const { label, style } = child.props;
 
@@ -26,7 +26,7 @@ const Tabs = ({ children, type }) => {
           );
         })}
       </ol>
-      <div className='tab-content'>
+      <div className='meda-tab-content'>
         {children.map((child) => {
           if (child.props.label !== activeTab) return undefined;
           return child.props.children;

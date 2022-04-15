@@ -56,6 +56,7 @@ const MainSection = () => {
 
           return (
             <img
+              key={index}
               className={"gabor-main-slider-image " + classes}
               src={arr[index].image}
             />

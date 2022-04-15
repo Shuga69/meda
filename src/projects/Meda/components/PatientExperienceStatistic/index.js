@@ -17,36 +17,36 @@ const PatientExperienceStatistic = ({
       <div>
         <Text
           style={{
-            "font-size": "16px",
+            fontSize: "16px",
             color: "#000000",
-            "font-weight": "500",
+            fontWeight: "500",
           }}
           text={title}
         />
         <Text
           style={{
             color: "#555555",
-            "text-transform": "uppercase",
-            "margin-top": "8px",
+            textTransform: "uppercase",
+            marginTop: "8px",
           }}
           text={subtitle}
         />
       </div>
       <div className='meda-patient-exp-statistic-container'>
-        <Text style={{ "font-size": "36px" }} text={count} />
+        <Text style={{ fontSize: "36px" }} text={count} />
         <div className='meda-patient-exp-statistic'>
           <Text
             style={
               type === "increase"
                 ? {
-                    "font-size": "16px",
+                    fontSize: "16px",
                     color: "#028F68",
-                    "margin-right": "5px",
+                    marginRight: "5px",
                   }
                 : {
                     color: "#FF2C1F",
-                    "margin-right": "5px",
-                    "font-size": "16px",
+                    marginRight: "5px",
+                    fontSize: "16px",
                   }
             }
             text={changes}

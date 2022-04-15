@@ -41,53 +41,57 @@ const Header = ({ drawerClickHandler, toggle }) => {
         top: visible ? 0 : "-83px",
         background: navStyle ? "transparent" : "white",
       }}
-      className='header'>
+      className='gabor-header'>
       <div className='gabor-container'>
-        <div className='header__inner'>
+        <div className='gabor-header__inner'>
           <div className='gabor-header-nav-container'>
-            <NavLink className='brand-image' to='/'>
-              <img src={logo} className='header__inner-logo' alt='Logo' />
+            <NavLink className='gabor-brand-image' to='/'>
+              <img src={logo} className='gabor-header__inner-logo' alt='Logo' />
             </NavLink>
 
-            <nav className='header-navigation'>
-              <NavLink to='/collection' className='header__navigation-link'>
+            <nav className='gabor-header-navigation'>
+              <NavLink
+                to='/collection'
+                className='gabor-header__navigation-link'>
                 Shoes
               </NavLink>
               <NavLink
                 to='/collection'
-                smooth={true}
-                className='header__navigation-link'>
+                smooth={"true"}
+                className='gabor-header__navigation-link'>
                 Trainers
               </NavLink>
               <NavLink
                 to='/collection'
-                smooth={true}
-                className='header__navigation-link'>
+                smooth={"true"}
+                className='gabor-header__navigation-link'>
                 Sandals
               </NavLink>
-              <NavLink to='/collection' className='header__navigation-link'>
+              <NavLink
+                to='/collection'
+                className='gabor-header__navigation-link'>
                 Boots
               </NavLink>
               <NavLink
                 to='/collection'
-                smooth={true}
-                className='header__navigation-link'>
+                smooth={"true"}
+                className='gabor-header__navigation-link'>
                 Handbags
               </NavLink>
               <NavLink
                 to='/collection'
-                smooth={true}
-                className='header__navigation-link'>
+                smooth={"true"}
+                className='gabor-header__navigation-link'>
                 Sales
               </NavLink>
             </nav>
           </div>
-          <div className='header-info'>
-            <div className='header__inner-language'>
+          <div className='gabor-header-info'>
+            <div className='gabor-header__inner-language'>
               <img src={language} />
               <p> GBP (£)</p>
             </div>
-            <div className='header__inner-icons'>
+            <div className='gabor-header__inner-icons'>
               <img src={search} />
               <img src={signIn} />
               <img src={wishList} />
@@ -95,7 +99,7 @@ const Header = ({ drawerClickHandler, toggle }) => {
             </div>
           </div>
           <Modal isShowing={isShowing} hide={toggleModal} />
-          <div className='header__inner-toggle'>
+          <div className='gabor-header__inner-toggle'>
             <ToggleButton onClick={drawerClickHandler} toggle={toggle} />
           </div>
         </div>

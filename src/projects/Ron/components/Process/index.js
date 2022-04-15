@@ -30,8 +30,14 @@ const Process = () => {
         />
       </div>
       <div className='ron-process-button-container'>
-        <Button text='Schedule a Notarization Now' />
-        <Button style={{ marginLeft: 20 }} text='Register as a Notary' />
+        <Button
+          style={{ padding: "15px 15px" }}
+          text='Schedule a Notarization Now'
+        />
+        <Button
+          style={{ marginLeft: 20, padding: "15px 15px" }}
+          text='Register as a Notary'
+        />
       </div>
     </div>
   );

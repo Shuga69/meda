@@ -13,10 +13,8 @@
 .ron-process-card-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  height: 120px;
-  width: 25%;
+  width: 20%;
   text-align: center;
 }
 .ron-process-card-title {

@@ -37,7 +37,6 @@ const BarChart = ({ data }) => {
         offsetX: -30,
       };
 
-  console.log(legendPosition);
   const options = {
     chart: { toolbar: { show: false }, offsetX: 0 },
     plotOptions: {

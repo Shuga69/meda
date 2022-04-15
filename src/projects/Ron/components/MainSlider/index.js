@@ -39,7 +39,7 @@ const MainSlider = () => {
   ];
   return (
     <div className='ron-main-slider-section'>
-      <div>
+      <div className='ron-main-slider-container-tablet'>
         <div className='ron-main-slider-btn-container'>
           <Button
             onClick={() => currentSlide(0)}
@@ -78,7 +78,7 @@ const MainSlider = () => {
             text='For Corp Notary +'
           />
         </div>
-
+        <img className='ron-main-slider-image-tablet' src={sliderImage} />
         <div className='ron-main-slider-content'>
           <Text
             className='ron-main-slider-content-title'
@@ -98,7 +98,7 @@ const MainSlider = () => {
           />
         </div>
       </div>
-      <img src={sliderImage} />
+      <img className='ron-main-slider-image' src={sliderImage} />
     </div>
   );
 };

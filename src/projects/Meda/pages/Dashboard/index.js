@@ -20,9 +20,9 @@ const Dashboard = () => {
             <div className='meda-dashboard-title'>
               <Text
                 style={{
-                  "font-weight": "500",
-                  "font-size": "20px",
-                  "line-height": "23px",
+                  fontWeight: "500",
+                  fontSize: "20px",
+                  lineHeight: "23px",
                   color: "#000000",
                 }}
                 text='Patient experience survey summary'
@@ -247,11 +247,12 @@ const Dashboard = () => {
         <div className='meda-dashboard-right-side-line-text'>
           <img src={sideLines} />
           <Text
+            className='meda-dashboard-right-side-text'
             style={{
-              "margin-left": "17px",
-              "font-size": "11px",
-              "font-weight": "500",
-              "text-transform": "uppercase",
+              marginLeft: "17px",
+              fontSize: "11px",
+              fontWeight: "500",
+              textTransform: "uppercase",
             }}
             text='previous quarter'
           />

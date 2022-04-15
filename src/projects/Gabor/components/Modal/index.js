@@ -31,22 +31,22 @@ const Modal = ({ isShowing, hide }) => {
   return isShowing
     ? ReactDOM.createPortal(
         <React.Fragment>
-          <div className='modal-overlay' />
+          <div className='gabor-modal-overlay' />
           <div
-            className='modal-wrapper'
+            className='gabor-modal-wrapper'
             aria-modal
             aria-hidden
             tabIndex={-1}
             role='dialog'>
-            <div ref={ref} className='modal'>
-              <div className='modal-header'>
+            <div ref={ref} className='gabor-modal'>
+              <div className='gabor-modal-header'>
                 <Text
                   style={{ fontWeight: 600, fontSize: 20 }}
                   text='Added Items (2)'
                 />
                 <button
                   type='button'
-                  className='modal-close-button'
+                  className='gabor-modal-close-button'
                   data-dismiss='modal'
                   aria-label='Close'
                   onClick={hide}>
@@ -84,7 +84,7 @@ const Modal = ({ isShowing, hide }) => {
                 <div className='gabor-custom-modal-input-container'>
                   <label
                     className='gabor-custom-modal-input-label'
-                    for='discount'>
+                    htmlFor='discount'>
                     Discount
                   </label>
                   <div>

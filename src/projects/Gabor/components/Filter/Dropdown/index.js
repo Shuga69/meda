@@ -15,7 +15,7 @@ const Dropdown = ({
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const ddRef = useRef(null);
-  console.log(selectedOptions);
+
   useEffect(() => {
     addClickHandlers();
     return () => removeClickHandlers();
@@ -54,10 +54,10 @@ const Dropdown = ({
     toggle();
   }
   return (
-    <div className='dropdown-container'>
-      <div className='dropdown'>
-        <div className='control'>
-          <div className='selected-value'>
+    <div className='gabor-dropdown-container'>
+      <div className='gabor-dropdown'>
+        <div className='gabor-control'>
+          <div className='gabor-selected-value'>
             <input
               type='text'
               placeholder={value ? value[label] : prompt}
@@ -74,17 +74,18 @@ const Dropdown = ({
           </div>
           <img src={filterArrow} />
         </div>
-        <div className={`options ${open ? "open" : ""}`}>
+        <div className={`gabor-options ${open ? "gabor-open" : ""}`}>
           {type === "text" ? (
             filter(options).map((option) => (
               <div
-                className='option-select-container'
+                key={option[label]}
+                className='gabor-option-select-container'
                 onMouseDown={() => selectOption(option)}
-                onTouchEnd={() => selectOption(option)}
-                onClick={() => selectOption(option)}>
+                onTouchEnd={() => selectOption(option)}>
                 <input
-                  className='option-select-checkbox'
+                  className='gabor-option-select-checkbox'
                   id='1'
+                  onClick={() => selectOption(option)}
                   checked={
                     selectedOptions && selectedOptions.includes(option[label])
                   }
@@ -92,8 +93,10 @@ const Dropdown = ({
                 />
 
                 <label
-                  for='1'
-                  className={`option ${value === option ? "selected" : ""}`}>
+                  htmlFor='1'
+                  className={`gabor-option ${
+                    value === option ? "gabor-selected" : ""
+                  }`}>
                   {option[label]}
                 </label>
               </div>
@@ -102,6 +105,7 @@ const Dropdown = ({
             <div className='gabor-color-container'>
               {filter(options).map((option) => (
                 <div
+                  key={option[label]}
                   className='gabor-color-option'
                   style={{ background: option[label] }}></div>
               ))}

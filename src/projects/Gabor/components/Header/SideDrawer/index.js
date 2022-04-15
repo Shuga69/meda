@@ -9,67 +9,67 @@ import ToggleButton from "../ToggleButton";
 import wishList from "../../../assets/Wish_list_icon.svg";
 import "./style.css";
 const SideDrawer = ({ show, onClick, drawerClickHandler, toggle }) => {
-  let drawerClasses = "side-drawer";
+  let drawerClasses = "gabor-side-drawer";
   if (show) {
-    drawerClasses = "side-drawer open";
+    drawerClasses = "gabor-side-drawer gabor-open";
   }
   return (
     <div className={drawerClasses}>
-      <div className='side-drawer__logo'>
-        <img src={logo} className='side-drawer__logo-image' alt='Logo' />
-        <div className='header__inner-toggle close'>
+      <div className='gabor-side-drawer__logo'>
+        <img src={logo} className='gabor-side-drawer__logo-image' alt='Logo' />
+        <div className='gabor-header__inner-toggle gabor-close'>
           <ToggleButton onClick={onClick} toggle={show} />
         </div>
       </div>
 
-      <nav className='side-drawer__navigation'>
+      <nav className='gabor-side-drawer__navigation'>
         <NavLink
           onClick={onClick}
           to='/'
-          smooth={true}
-          className='side-drawer__navigation-link'>
+          smooth={"true"}
+          className='gabor-side-drawer__navigation-link'>
           Shoes
         </NavLink>
 
         <NavLink
           onClick={onClick}
           to='/brief'
-          smooth={true}
-          className='side-drawer__navigation-link'>
+          smooth={"true"}
+          className='gabor-side-drawer__navigation-link'>
           Trainers
         </NavLink>
         <NavLink
           onClick={onClick}
           to='/'
-          smooth={true}
-          className='side-drawer__navigation-link'>
+          smooth={"true"}
+          className='gabor-side-drawer__navigation-link'>
           Sandals
         </NavLink>
 
         <NavLink
           onClick={onClick}
           to='/brief'
-          smooth={true}
-          className='side-drawer__navigation-link'>
+          smooth={"true"}
+          className='gabor-side-drawer__navigation-link'>
           Boots
         </NavLink>
         <NavLink
           onClick={onClick}
           to='/brief'
-          smooth={true}
-          className='side-drawer__navigation-link'>
+          smooth={"true"}
+          className='gabor-side-drawer__navigation-link'>
           Handbags
         </NavLink>
         <NavLink
           onClick={onClick}
           to='/brief'
-          smooth={true}
-          className='side-drawer__navigation-link'>
+          smooth={"true"}
+          className='gabor-side-drawer__navigation-link'>
           Sales
         </NavLink>
       </nav>
-      <div className='side-drawer__header-info'>
-        <div className='side-drawer__header__inner-icons'>
+      <div className='gabor-side-drawer__header-info'>
+        <div className='gabor-side-drawer__header__inner-icons'>
           <img src={search} />
           <img src={signIn} />
           <img src={wishList} />

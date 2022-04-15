@@ -9,7 +9,7 @@
 }
 .gabor-product-slides-container {
   position: absolute;
-  left: 300px;
+  left: 330px;
 }
 .mySlides {
   position: absolute;
@@ -23,8 +23,8 @@
   height: 77%;
   width: 100%;
 }
-.prev,
-.next {
+.gabor-prev,
+.gabor-next {
   align-self: center;
 }
 .gabor-slider-product-slides-button {

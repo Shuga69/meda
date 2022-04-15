@@ -11,19 +11,17 @@ const ProfileInfo = ({ icon, avatar, style, text, infoStyle }) => {
         <div>
           <Text
             style={{
-              "font-weight": "500",
+              fontWeight: "500",
               color: "#000000",
-              "font-size": 14,
-              "line-height": 16,
+              fontSize: "14px",
             }}
             text='Dianne Russell'
           />
           <Text
             style={{
-              "line-height": 14,
               color: "#555555",
-              "margin-top": 5,
-              "font-size": 12,
+              marginTop: 5,
+              fontSize: 12,
             }}
             text={text}
           />

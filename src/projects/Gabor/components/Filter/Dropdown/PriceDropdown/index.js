@@ -20,10 +20,10 @@ const PriceDropdown = ({ prompt }) => {
   }
 
   return (
-    <div ref={ref} className='dropdown-container'>
-      <div className='dropdown'>
-        <div className='control'>
-          <div className='selected-value'>
+    <div ref={ref} className='gabor-dropdown-container'>
+      <div className='gabor-dropdown'>
+        <div className='gabor-control'>
+          <div className='gabor-selected-value'>
             <input
               type='text'
               placeholder={prompt}
@@ -34,15 +34,9 @@ const PriceDropdown = ({ prompt }) => {
           </div>
           <img src={filterArrow} />
         </div>
-        <div className={`options ${open ? "open" : ""}`}>
+        <div className={`gabor-options ${open ? "gabor-open" : ""}`}>
           <div style={{ height: 70, padding: "10px 10px 17px 10px" }}>
-            <PriceSlider
-              min={0}
-              max={1000}
-              onChange={({ min, max }) =>
-                console.log(`min = ${min}, max = ${max}`)
-              }
-            />
+            <PriceSlider min={0} max={1000} onChange={() => {}} />
           </div>
         </div>
       </div>

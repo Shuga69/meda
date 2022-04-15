@@ -23,7 +23,7 @@ const ProductExpandInfo = ({
         className='gabor-article-btn'>
         <Text
           style={{
-            "text-transform": "uppercase",
+            textTransform: "uppercase",
             color: "#050505",
           }}
           text={text}

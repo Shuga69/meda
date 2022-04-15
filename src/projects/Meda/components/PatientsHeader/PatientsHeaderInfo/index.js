@@ -10,19 +10,19 @@ const PatientsHeaderInfo = ({ data, title, subtitle, image }) => {
         <div className='meda-user-info-header-text'>
           <Text
             style={{
-              "text-transform": "uppercase",
-              "font-size": "11px",
+              textTransform: "uppercase",
+              fontSize: "11px",
               color: "#777777",
-              "line-height": "13px",
-              "margin-bottom": "5px",
+              lineHeight: "13px",
+              marginBottom: "5px",
             }}
             text={title}
           />
           <Text
             style={{
-              "font-size": "20px",
+              fontSize: "20px",
               color: "#000000",
-              "line-height": "23px",
+              lineHeight: "23px",
             }}
             text={subtitle}
           />
@@ -30,13 +30,13 @@ const PatientsHeaderInfo = ({ data, title, subtitle, image }) => {
       </div>
       <div className='meda-user-header-description-container'>
         {data.map((item) => (
-          <div>
+          <div key={item.text}>
             <Text
               style={{
-                "font-size": "11px",
+                fontSize: "11px",
                 color: "#777777",
-                "text-transform": "uppercase",
-                "margin-bottom": "5px",
+                textTransform: "uppercase",
+                marginBottom: "5px",
               }}
               text={item.title}
             />

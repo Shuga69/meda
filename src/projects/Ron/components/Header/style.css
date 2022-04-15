@@ -37,3 +37,50 @@
   display: flex;
   justify-content: space-between;
 }
+.ron-header__navigation-link:hover {
+  color: #f65459;
+}
+@media all and (max-width: 1368px) and (max-height: 912px) and (orientation: landscape) {
+  .ron-header__inner-logo {
+    width: 90%;
+  }
+}
+@media all and (max-width: 1180px) and (max-height: 820px) and (orientation: landscape) {
+  .ron-header__inner-logo {
+    width: 80%;
+  }
+  .ron-header-button {
+    width: 33%;
+  }
+  .ron-header-navigation {
+    width: 60%;
+  }
+}
+@media all and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+  .ron-header__inner-logo {
+    width: 80%;
+  }
+  .ron-header-button {
+    width: 35%;
+  }
+  .ron-header-navigation {
+    width: 70%;
+  }
+}
+@media all and (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
+  .ron-header__inner-logo {
+    width: 70%;
+  }
+  .ron-header-button {
+    width: 38%;
+  }
+  .ron-header-navigation {
+    width: 100%;
+  }
+  .ron-header__navigation-link {
+    padding-left: 15px;
+  }
+  .ron-brand-image {
+    width: 40%;
+  }
+}

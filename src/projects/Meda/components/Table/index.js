@@ -4,8 +4,8 @@ import TableRow from "./TableRow";
 import "./style.css";
 const Table = ({ tbodyData, theadData, border, rowStyle, styleIndex }) => {
   return (
-    <table>
-      <thead style={border ? { "border-bottom": "1px solid  #E5EEEB" } : null}>
+    <table className='meda-table'>
+      <thead style={border ? { borderBottom: "1px solid  #E5EEEB" } : null}>
         <tr>
           {theadData.map((h) => {
             return <TableHead key={h} item={h} />;

@@ -1,4 +1,4 @@
-.tab-list-item {
+.meda-tab-list-item {
   background: white;
   border: 1px solid #e5eeeb;
   border-radius: 6px;
@@ -9,12 +9,12 @@
   cursor: pointer;
 }
 
-.tab-list-active {
+.meda-tab-list-active {
   background: #e8f5f1 !important;
   color: #028f68;
   border: none;
 }
-.side-bar {
+.meda-side-bar {
   background: #ffffff;
   border: none;
   width: 130px;
@@ -23,7 +23,7 @@
 
   cursor: pointer;
 }
-.side-bar.active {
+.meda-side-bar.meda-active {
   background: #e8f5f1 !important;
   color: #028f68 !important;
   border: none;

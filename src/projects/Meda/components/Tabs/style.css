@@ -1,9 +1,9 @@
-.tab-list {
+.meda-tab-list {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 0;
 }
-.tabs {
+.meda-tabs {
   width: 100%;
 }

@@ -24,7 +24,7 @@ const InfoContainer = ({
         className='meda-article-btn'>
         <Text
           style={{
-            "text-transform": "uppercase",
+            textTransform: "uppercase",
             color: "#028F68",
           }}
           text={text}

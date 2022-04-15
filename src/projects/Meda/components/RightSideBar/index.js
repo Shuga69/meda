@@ -17,7 +17,7 @@ const RightSideBar = ({ children, title, labels }) => {
         />
         <SideTitle text={title} />
         <div className='meda-right-side-menu'>
-          <Tabs type='side-bar'>
+          <Tabs type='meda-side-bar'>
             <Button
               style={{
                 borderTopLeftRadius: 8,

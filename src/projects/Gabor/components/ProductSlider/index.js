@@ -48,7 +48,7 @@ const ProductSlider = () => {
   return (
     <div className='gabor-slider-product-section'>
       <div className='gabor-slider-product-container'>
-        <a className='prev' onclick='plusSlides(-1)'>
+        <a className='gabor-prev'>
           <IconButton onClick={prevSlide} icon={leftArrow} />
         </a>
         <div id='slides' className='gabor-product-slides-container'>
@@ -65,22 +65,23 @@ const ProductSlider = () => {
 
             return (
               <img
+                key={index}
                 className={"gabor-product-slider-image " + classes}
                 src={arr[index].image}
               />
             );
           })}
         </div>
-        <a className='next' onclick='plusSlides(1)'>
+        <a className='gabor-next'>
           <IconButton onClick={nextSlide} icon={rightArrow} />
         </a>
       </div>
-      <div class='gabor-slider-product-slides-button'>
+      <div className='gabor-slider-product-slides-button'>
         {buttonData.map((item, index) => {
           return (
-            <div className='gabor-slider-product-slide-btn'>
+            <div key={index} className='gabor-slider-product-slide-btn'>
               <img
-                class='gabor-slider-product-slide-btn-image'
+                className='gabor-slider-product-slide-btn-image'
                 src={item.image}
                 onClick={() => currentSlide(index)}
                 alt='The Woods'

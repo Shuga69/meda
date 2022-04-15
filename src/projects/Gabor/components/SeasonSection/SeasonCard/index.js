@@ -6,8 +6,8 @@ import { NavLink } from "react-router-dom";
 import "./style.css";
 const SeasonCard = ({ className, image, title, subtitle, color }) => {
   return (
-    <NavLink to='/collection' className='gabor-product__navigation-link'>
-      <div style={color} className={"gabor-season-card-section " + className}>
+    <div style={color} className={"gabor-season-card-section " + className}>
+      <NavLink to='/collection' className='gabor-product__navigation-link'>
         <img className='gabor-season-card-image' src={image} />
         <div className='gabor-season-card-text-container'>
           <div>
@@ -16,8 +16,8 @@ const SeasonCard = ({ className, image, title, subtitle, color }) => {
           </div>
           <IconButton icon={right} />
         </div>
-      </div>
-    </NavLink>
+      </NavLink>
+    </div>
   );
 };
 

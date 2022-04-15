@@ -18,7 +18,7 @@ const SolutionSection = () => {
         </ul>
       </SolutionCard>
       <SolutionCard
-        style={{ flexDirection: "row-reverse", marginTop: "150px" }}
+        style={{ flexDirection: "row-reverse", marginTop: "100px" }}
         image={solutionImage2}
         title='Business'
         description='Many industries rely on notarized documents. You no longer need to schedule an onsite notary. With EverythingLegal`s digital notary platform you can easily schedule or get same-day service on the documents you need notarized.'

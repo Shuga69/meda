@@ -1,4 +1,4 @@
-.switch {
+.meda-switch {
   position: relative;
   display: inline-block;
   width: 24px;
@@ -8,12 +8,12 @@
   margin-right: 40px;
   outline: none;
 }
-.switch input {
+.meda-switch input {
   position: absolute;
   top: -99999px;
   left: -99999px;
 }
-.slider {
+.meda-slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -25,7 +25,7 @@
   transition: 0.4s;
   border-radius: 34px;
 }
-.slider:before {
+.meda-slider:before {
   position: absolute;
   content: "";
   height: 20px;
@@ -37,13 +37,13 @@
   transition: 0.4s;
   border-radius: 50%;
 }
-input:checked + .slider {
+.meda-input:checked + .meda-slider {
   background-color: #c2ebde;
 }
-input:focus + .slider {
+.meda-input:focus + .meda-slider {
   box-shadow: 0 0 1px #c2ebde;
 }
-input:checked + .slider:before {
+.meda-input:checked + .meda-slider:before {
   -webkit-transform: translateX(24px);
   -ms-transform: translateX(24px);
   transform: translateX(24px);

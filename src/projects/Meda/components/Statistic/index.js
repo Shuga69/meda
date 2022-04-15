@@ -7,9 +7,9 @@ const Statistic = () => {
     <div className='meda-statistic-container'>
       <Text
         style={{
-          "font-weight": "500",
-          "font-size": "20px",
-          "line-height": "23px",
+          fontWeight: "500",
+          fontSize: "20px",
+          lineHeight: "23px",
           color: "#000000",
         }}
         text='Statistic'

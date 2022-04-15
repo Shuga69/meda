@@ -26,7 +26,7 @@ const Appointment = () => {
       text: "Dianne Russell",
     },
   ];
-  const appointmentsColumns = ["", "", ""];
+  const appointmentsColumns = [" ", "  ", "   "];
 
   const appointmentsData = [
     {
@@ -79,7 +79,7 @@ const Appointment = () => {
               </div>
               <div className='meda-hr-line'></div>
               <div className='meda-appointment-description'>
-                <Text style={{ "margin-bottom": "10px" }} text='Description' />
+                <Text style={{ marginBottom: "10px" }} text='Description' />
                 <Input
                   background='#FAFBFC'
                   height='120px'

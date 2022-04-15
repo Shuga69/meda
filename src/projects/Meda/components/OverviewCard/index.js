@@ -11,27 +11,24 @@ const OverviewCard = ({ image, title, count, patientsCount }) => {
         <div className='meda-overview-card-total-text'>
           <Text
             style={{
-              "font-weight": "500",
-              "font-size": "16px",
+              fontWeight: "500",
+              fontSize: "16px",
               color: "#000000",
             }}
             text={title}
           />
           <Text
             style={{
-              "font-weight": "400",
-              "font-size": "12px",
-              "line-height": "27.2px",
+              fontWeight: "400",
+              fontSize: "12px",
+              lineHeight: "27.2px",
             }}
             text={`${patientsCount} new patients`}
           />
         </div>
       </div>
       <div className='meda-overview-card-count'>
-        <Text
-          style={{ "font-size": "26px", "font-weight": "500" }}
-          text={count}
-        />
+        <Text style={{ fontSize: "26px", fontWeight: "500" }} text={count} />
         <Button type='white' text='Detail' />
       </div>
     </div>

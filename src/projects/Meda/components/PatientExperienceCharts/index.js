@@ -1,5 +1,4 @@
 import React from "react";
-import DonutChart from "../DonutChart";
 import Text from "../Text";
 import "./style.css";
 
@@ -9,8 +8,8 @@ const PatientExperienceCharts = ({ title, subtitle, children, style }) => {
       <div>
         <Text
           style={{
-            "font-weight": "500",
-            "font-size": "16px",
+            fontWeight: "500",
+            fontSize: "16px",
             color: "#000000",
           }}
           text={title}
@@ -18,9 +17,9 @@ const PatientExperienceCharts = ({ title, subtitle, children, style }) => {
         <Text
           style={{
             color: "#555555",
-            "text-transform": "uppercase",
-            "font-size": "12px",
-            "margin-top": "10px",
+            textTransform: "uppercase",
+            fontSize: "12px",
+            marginTop: "10px",
           }}
           text={subtitle}
         />

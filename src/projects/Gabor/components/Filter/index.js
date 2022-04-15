@@ -58,7 +58,7 @@ const Filter = () => {
       setSelectedItems(arr);
     }
   };
-  console.log(selectedItems);
+
   return (
     <div>
       <div className='gabor-filter-container'>

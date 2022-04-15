@@ -3,7 +3,7 @@ import "./style.css";
 const CustomInput = ({ label, listName, data, placeholder }) => {
   return (
     <div className='gabor-custom-modal-input-container'>
-      <label className='gabor-custom-modal-input-label' for='myBrowser'>
+      <label className='gabor-custom-modal-input-label' htmlFor='myBrowser'>
         {label}
       </label>
       <input

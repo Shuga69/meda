@@ -1,4 +1,4 @@
-.toggle-button {
+.gabor-toggle-button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,11 +9,11 @@
   cursor: pointer;
 }
 
-.toggle-button:focus {
+.gabor-toggle-button:focus {
   outline: none;
 }
 
-.toggle-button__line {
+.gabor-toggle-button__line {
   width: 45px;
   height: 4px;
   background: #e1202c;
@@ -22,18 +22,18 @@
   border-radius: 5px;
 }
 
-.toggle-button__line.open:nth-child(1) {
+.gabor-toggle-button__line.gabor-open:nth-child(1) {
   transform: rotate(-45deg) translate(-7px, 15px);
   background: #e1202c;
 
   height: 3px;
 }
 
-.toggle-button__line.open:nth-child(2) {
+.gabor-toggle-button__line.gabor-open:nth-child(2) {
   opacity: 0;
 }
 
-.toggle-button__line.open:nth-child(3) {
+.gabor-toggle-button__line.gabor-open:nth-child(3) {
   transform: rotate(45deg) translate(-7px, -16px);
   background: #e1202c;
   height: 3px;

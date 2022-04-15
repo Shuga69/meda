@@ -1,11 +1,19 @@
 .ron-button {
-  background: #f65459;
+  color: #fff;
+  border: 2px solid #f65459;
   border-radius: 8px;
+  background-image: linear-gradient(30deg, #f65459 50%, #fff 50%);
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: 0%;
   padding: 8px 17px;
-  border: none;
+  transition: background 300ms ease-in-out, color 300ms ease-in-out;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #ffffff;
   cursor: pointer;
+}
+.ron-button:hover {
+  background-position: 100%;
+  color: #000;
 }

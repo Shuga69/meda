@@ -8,7 +8,7 @@ const LogInfoContainer = ({ children, text, to = "/newAppointment" }) => {
       <div className='meda-article-add-btn'>
         <Text
           style={{
-            "text-transform": "uppercase",
+            textTransform: "uppercase",
             color: "#028F68",
           }}
           text={text}
@@ -17,8 +17,8 @@ const LogInfoContainer = ({ children, text, to = "/newAppointment" }) => {
         <Link to={to}>
           <Text
             style={{
-              "font-weight": "500",
-              "font-size": "21px",
+              fontWeight: "500",
+              fontSize: "21px",
               color: "#028F68",
             }}
             text='+'

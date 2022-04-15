@@ -134,6 +134,7 @@ const ProductPage = () => {
                 {sizeData.map((item) => {
                   return (
                     <Button
+                      key={item.size}
                       className='gabor-product-inforamtion-btn-size'
                       text={item.size}
                     />
@@ -158,7 +159,7 @@ const ProductPage = () => {
               />
               <div className='gabor-product-check-container'>
                 <input
-                  className='option-select-checkbox'
+                  className='gabor-option-select-checkbox'
                   id='1'
                   value={gift}
                   checked={gift}
@@ -166,7 +167,7 @@ const ProductPage = () => {
                   type='checkbox'
                 />
 
-                <label for='1'>
+                <label htmlFor='1'>
                   <div className='gabor-product-check-label'>
                     <Text
                       style={{
@@ -205,7 +206,7 @@ const ProductPage = () => {
                   text='ADD TO BASKET'
                 />
                 <Button
-                  className='gabor-custom-button wish-btn'
+                  className='gabor-custom-button gabor-wish-btn'
                   icon={wishBtn}
                   text='Add to wish list'
                 />

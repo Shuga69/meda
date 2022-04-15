@@ -2,9 +2,6 @@ import React from "react";
 import Input from "../Input";
 import search from "../../assets/search.svg";
 import Text from "../Text";
-
-import Button from "../Button";
-import Tabs from "../Tabs";
 import "./style.css";
 import PatientsHeaderInfo from "./PatientsHeaderInfo";
 
@@ -23,7 +20,8 @@ const PatientsHeader = ({
           {data &&
             data.map((item) => (
               <Text
-                style={{ color: "#7D8685", "font-size": "14px" }}
+                key={item.text}
+                style={{ color: "#7D8685", fontSize: "14px" }}
                 text={item.text}
               />
             ))}

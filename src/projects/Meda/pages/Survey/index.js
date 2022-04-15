@@ -129,7 +129,7 @@ const Survey = () => {
                     tbodyData={appointmentsData}
                     theadData={appointmentsColumns}
                     border={true}
-                    rowStyle={{ "padding-top": "35px" }}
+                    rowStyle={{ paddingTop: "35px" }}
                     styleIndex={2}
                   />
                 </div>

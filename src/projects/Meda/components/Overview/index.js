@@ -10,9 +10,9 @@ const Overview = () => {
     <div className='meda-overview-section'>
       <Text
         style={{
-          "font-weight": "500",
-          "font-size": "20px",
-          "line-height": "23px",
+          fontWeight: "500",
+          fontSize: "20px",
+          lineHeight: "23px",
           color: "#000000",
         }}
         text='Overview'

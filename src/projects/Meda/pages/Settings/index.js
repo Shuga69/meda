@@ -17,12 +17,12 @@ const Settings = () => {
           <div className='meda-container'>
             <Text
               style={{
-                "font-weight": "500",
-                "font-size": "20px",
-                "line-height": "23px",
+                fontWeight: "500",
+                fontSize: "20px",
+                lineHeight: "23px",
                 color: "#000000",
-                "margin-top": "65px",
-                "margin-bottom": "57px",
+                marginTop: "65px",
+                marginBottom: "57px",
               }}
               text='Settings'
             />
@@ -40,16 +40,13 @@ const Settings = () => {
                 <InfoContainer text='Change password'>
                   <div className='meda-settings-password-info'>
                     <Text
-                      style={{ "margin-bottom": "5px" }}
+                      style={{ marginBottom: "5px" }}
                       text='Current Password'
                     />
                     <Input background=' #FAFBFC' style={{ width: "75%" }} />
                   </div>
                   <div className='meda-settings-password-info'>
-                    <Text
-                      style={{ "margin-bottom": "5px" }}
-                      text='New Password'
-                    />
+                    <Text style={{ marginBottom: "5px" }} text='New Password' />
                     <Input background=' #FAFBFC' style={{ width: "75%" }} />
                   </div>
                 </InfoContainer>
@@ -60,7 +57,7 @@ const Settings = () => {
                     <div className='meda-settings-contact-title'>
                       <Text text='Contact Method' />
                       <Text
-                        style={{ "font-weight": "500" }}
+                        style={{ fontWeight: "500" }}
                         text='Secure Message'
                       />
                     </div>

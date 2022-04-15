@@ -1,11 +1,11 @@
-table {
+.meda-table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
   margin-top: 10px;
 }
 
-th {
+.meda-th {
   text-align: left;
   padding-left: 20px;
   color: #777777;
@@ -14,7 +14,7 @@ th {
   line-height: 170%;
   padding-bottom: 8px;
 }
-td {
+.meda-td {
   padding: 7px 20px;
   color: #000000;
 }

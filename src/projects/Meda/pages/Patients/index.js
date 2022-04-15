@@ -15,9 +15,9 @@ const Patients = () => {
     width: "100%",
     background: "#FAFBFC",
     border: "1px solid #E5EEEB",
-    "text-transform": "uppercase",
+    textTransform: "uppercase",
     color: "#000000",
-    "font-weight": 500,
+    fontWeight: 500,
     height: "50px",
   };
   const menu = [
@@ -71,8 +71,8 @@ const Patients = () => {
       status: ["Open"],
       style: {
         color: "#028F68",
-        "text-transform": "uppercase",
-        "font-weight": "500",
+        textTransform: "uppercase",
+        fontWeight: "500",
       },
     },
     {
@@ -81,8 +81,8 @@ const Patients = () => {
       status: ["Cancelled"],
       style: {
         color: "#FF2C1F",
-        "text-transform": "uppercase",
-        "font-weight": "500",
+        textTransform: "uppercase",
+        fontWeight: "500",
       },
     },
   ];
@@ -99,7 +99,7 @@ const Patients = () => {
               data={menu}
             />
             <div className='meda-header-btn-container'>
-              <Tabs type='side-bar'>
+              <Tabs type='meda-side-bar'>
                 <Button
                   style={{
                     ...{

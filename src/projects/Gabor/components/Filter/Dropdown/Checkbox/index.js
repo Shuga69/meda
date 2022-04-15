@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 const Checkbox = ({ checked, value, checkGroup, id, text }) => {
   return (
-    <div className='checkbox-container'>
+    <div className='gabor-checkbox-container'>
       <li>
         <input
           type='checkbox'
@@ -11,7 +11,7 @@ const Checkbox = ({ checked, value, checkGroup, id, text }) => {
           name={checkGroup}
           id={"checkbox-" + id}
         />
-        <label for={"checkbox-" + id}>{text}</label>
+        <label for={"gabor-checkbox-" + id}>{text}</label>
         <svg
           width='12'
           height='11'

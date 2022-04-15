@@ -6,7 +6,7 @@ import ReviewComment from "./ReviewComment";
 import ReviewSummaryIndicator from "./ReviewSummaryIndicator";
 import "./style.css";
 const ReviewSummary = () => {
-  const [selectedButton, setSelectedButton] = useState("delivery");
+  const [selectedButton, setSelectedButton] = useState("Delivery");
   const selectButton = (item) => {
     setSelectedButton(item);
   };

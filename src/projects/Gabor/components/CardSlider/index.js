@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import Text from "../Text";
 import left from "../../assets/leftArrow.svg";
 import right from "../../assets/rightArrow.svg";
@@ -10,7 +10,7 @@ const CardSlider = ({ component, data, title, subtitle }) => {
   const [slidePerPage, setSlidePerPage] = useState(4);
   const isTablet = useMedia("(min-width: 1600px)");
   const isPhone = useMedia("(min-width: 1367px)");
-  console.log(slidePerPage);
+
   useEffect(() => {
     setSlidePerPage(4);
     if (!isTablet) {
@@ -54,7 +54,7 @@ const CardSlider = ({ component, data, title, subtitle }) => {
             for (let i = 0; i < slidePerPage; i++)
               if (index === current + i) classes = "slideActive";
 
-            return component(item, classes);
+            return <Fragment key={index}>{component(item, classes)}</Fragment>;
           })}
         </div>
       </div>

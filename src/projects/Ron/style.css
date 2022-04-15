@@ -15,3 +15,13 @@
   width: 58.48%;
   margin: 0 auto;
 }
+@media all and (max-width: 1368px) and (max-height: 912px) and (orientation: landscape) {
+  .ron-container {
+    width: 80%;
+  }
+}
+@media all and (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
+  .ron-container {
+    width: 90%;
+  }
+}

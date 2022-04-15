@@ -9,9 +9,14 @@ const CheckboxToggle = () => {
   return (
     <div className='meda-switch-container'>
       <Text text='Deny' />
-      <label className='switch'>
-        <input type='checkbox' value={isChecked} onChange={handleChange} />
-        <div className='slider'></div>
+      <label className='meda-switch'>
+        <input
+          className='meda-input'
+          type='checkbox'
+          value={isChecked}
+          onChange={handleChange}
+        />
+        <div className='meda-slider'></div>
       </label>
       <Text style={isChecked ? { color: "#028F68" } : null} text='Allow' />
     </div>

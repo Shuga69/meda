@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
+import Text from "../../Text";
 import "./style.css";
 const PriceSlider = ({ min, max, onChange }) => {
   const [minVal, setMinVal] = useState(min);
@@ -13,7 +14,6 @@ const PriceSlider = ({ min, max, onChange }) => {
     [min, max]
   );
 
-  // Set width of the range to decrease from the left side
   useEffect(() => {
     if (maxValRef.current) {
       const minPercent = getPercent(minVal);
@@ -26,30 +26,27 @@ const PriceSlider = ({ min, max, onChange }) => {
     }
   }, [minVal, getPercent]);
 
-  // Set width of the range to decrease from the right side
   useEffect(() => {
     if (minValRef.current) {
       const minPercent = getPercent(+minValRef.current.value);
       const maxPercent = getPercent(maxVal);
 
       if (range.current) {
-        console.log(maxPercent);
         range.current.style.width = `${maxPercent - minPercent}%`;
       }
     }
   }, [maxVal, getPercent]);
 
-  // Get min and max values when their state changes
   useEffect(() => {
     onChange({ min: minVal, max: maxVal });
   }, [minVal, maxVal, onChange]);
 
   return (
     <>
-      <div className='price-slider__number'>
-        <div className='price-slider__min'>£{minVal}</div>
-        <p className='price-slider__min'> - </p>
-        <div className='price-slider__max'>£{maxVal}</div>
+      <div className='gabor-price-slider__number'>
+        <div className='gabor-price-slider__min'>£{minVal}</div>
+        <Text className='gabor-price-slider__min' text=' - ' />
+        <div className='gabor-price-slider__max'>£{maxVal}</div>
       </div>
       <input
         type='range'
@@ -63,7 +60,9 @@ const PriceSlider = ({ min, max, onChange }) => {
           event.target.value = value.toString();
         }}
         className={
-          minVal > max - 100 ? "thumb thumb--zindex-5" : "thumb thumb--zindex-3"
+          minVal > max - 100
+            ? "gabor-thumb gabor-thumb--zindex-5"
+            : "gabor-thumb gabor-thumb--zindex-3"
         }
       />
       <input
@@ -77,12 +76,12 @@ const PriceSlider = ({ min, max, onChange }) => {
           setMaxVal(value);
           event.target.value = value.toString();
         }}
-        className='thumb thumb--zindex-4'
+        className='gabor-thumb gabor-thumb--zindex-4'
       />
 
-      <div className='price-slider'>
-        <div className='price-slider__track'></div>
-        <div ref={range} className='price-slider__range'></div>
+      <div className='gabor-price-slider'>
+        <div className='gabor-price-slider__track'></div>
+        <div ref={range} className='gabor-price-slider__range'></div>
       </div>
     </>
   );

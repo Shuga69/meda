@@ -1,4 +1,4 @@
-.modal-overlay {
+.gabor-modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -9,7 +9,7 @@
   opacity: 0.5;
 }
 
-.modal-wrapper {
+.gabor-modal-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@
   outline: 0;
 }
 
-.modal {
+.gabor-modal {
   z-index: 100;
   background: white;
   position: relative;
@@ -33,12 +33,12 @@
   padding: 2rem;
 }
 
-.modal-header {
+.gabor-modal-header {
   display: flex;
   justify-content: space-between;
 }
 
-.modal-close-button {
+.gabor-modal-close-button {
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1;

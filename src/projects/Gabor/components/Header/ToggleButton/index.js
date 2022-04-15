@@ -2,14 +2,14 @@ import React from "react";
 import "./style.css";
 
 const ToggleButton = ({ toggle, onClick }) => {
-  let toggleClasses = "toggle-button__line";
+  let toggleClasses = "gabor-toggle-button__line";
 
   if (toggle) {
-    toggleClasses = "toggle-button__line open";
+    toggleClasses = "gabor-toggle-button__line gabor-open";
   }
 
   return (
-    <button className='toggle-button' onClick={onClick}>
+    <button className='gabor-toggle-button' onClick={onClick}>
       <div className={toggleClasses}></div>
       <div className={toggleClasses}></div>
       <div className={toggleClasses}></div>

@@ -1,20 +1,20 @@
-.dropdown {
+.gabor-dropdown {
   position: relative;
   color: #333;
   cursor: default;
   border: none;
 }
-.dropdown {
+.gabor-dropdown {
   border: none;
 }
-.dropdown-container {
+.gabor-dropdown-container {
   border: none;
 }
-.control {
+.gabor-control {
   display: flex;
   width: 100px;
 }
-.dropdown .arrow {
+.gabor-dropdown .gabor-arrow {
   border-color: #999 transparent transparent;
   border-style: solid;
   border-width: 5px 5px 0px;
@@ -28,18 +28,18 @@
   width: 0;
 }
 
-.dropdown .arrow.open {
+.gabor-dropdown .gabor-arrow.gabor-open {
   border-color: transparent transparent #999;
   border-width: 0 5px 5px;
 }
 
-.dropdown .selected-value {
+.gabor-dropdown .gabor-selected-value {
   display: flex;
 }
-.dropdown .selected-value input::placeholder {
+.gabor-dropdown .gabor-selected-value input::placeholder {
   color: #050505;
 }
-.dropdown .selected-value input {
+.gabor-dropdown .gabor-selected-value input {
   overflow: hidden;
   background-color: #fff;
   font-weight: 600;
@@ -55,7 +55,7 @@
   width: 100%;
 }
 
-.dropdown .options {
+.gabor-dropdown .gabor-options {
   display: none;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -71,24 +71,24 @@
   -webkit-overflow-scrolling: touch;
 }
 
-.dropdown .options.open {
+.gabor-dropdown .gabor-options.gabor-open {
   display: block;
   width: max-content;
 }
 
-.dropdown .option {
+.gabor-dropdown .gabor-option {
   color: rgba(51, 51, 51, 0.8);
   cursor: pointer;
 
   padding: 8px 10px;
 }
 
-.dropdown .option.selected,
-.dropdown .option:hover {
+.gabor-dropdown .gabor-option.gabor-selected,
+.gabor-dropdown .gabor-option:hover {
   background-color: #f2f9fc;
   color: #333;
 }
-.option-select-container {
+.gabor-option-select-container {
   display: flex;
 
   width: 100%;
@@ -102,17 +102,17 @@
 
   border: 1px solid #e7e7e7;
 }
-.option-select-checkbox {
+.gabor-option-select-checkbox {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
-.option-select-checkbox + label {
+.gabor-option-select-checkbox + label {
   display: flex;
   align-items: center;
   width: max-content;
 }
-.option-select-checkbox + label::before {
+.gabor-option-select-checkbox + label::before {
   content: "";
   display: inline-block;
   width: 16px;
@@ -122,7 +122,7 @@
   border-radius: 4px;
   margin-right: 10px;
 }
-.option-select-checkbox:checked + label::before {
+.gabor-option-select-checkbox:checked + label::before {
   border-color: #050505;
   background-color: #fff;
 
@@ -139,7 +139,7 @@
   width: 316px;
 }
 @media all and (max-width: 1368px) and (max-height: 912px) and (orientation: landscape) {
-  .dropdown-container {
+  .gabor-dropdown-container {
     margin-left: 5px;
   }
 }

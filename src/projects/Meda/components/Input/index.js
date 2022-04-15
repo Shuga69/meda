@@ -9,7 +9,7 @@ const Input = ({ icon, placeholder, style, background, height, disabled }) => {
         disabled={disabled}
         placeholder={placeholder}
       />
-      {icon && <img className='icon' src={icon} />}
+      {icon && <img className='meda-icon' src={icon} />}
     </div>
   );
 };
